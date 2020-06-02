@@ -1,0 +1,1458 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Middleware · Slim Portal</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nuxseme">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4-dependency-container.html" />
+    
+    
+    <link rel="prev" href="2-psr-7.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon.png">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Get Started
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1-get-started/1-home.html">
+            
+                <a href="../1-get-started/1-home.html">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1-get-started/2-installtion.html">
+            
+                <a href="../1-get-started/2-installtion.html">
+            
+                    
+                    Installtion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1-get-started/3-web-servers.html">
+            
+                <a href="../1-get-started/3-web-servers.html">
+            
+                    
+                    Web Servers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1-get-started/4-deployment.html">
+            
+                <a href="../1-get-started/4-deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1-application-life-cycle.html">
+            
+                <a href="1-application-life-cycle.html">
+            
+                    
+                    Application Life Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2-psr-7.html">
+            
+                <a href="2-psr-7.html">
+            
+                    
+                    Psr 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="3-middleware.html">
+            
+                <a href="3-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4-dependency-container.html">
+            
+                <a href="4-dependency-container.html">
+            
+                    
+                    Dependency Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Application
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3-application/1-overview.html">
+            
+                <a href="../3-application/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3-application/2-notices-warings-handling.html">
+            
+                <a href="../3-application/2-notices-warings-handling.html">
+            
+                    
+                    Notices Warings Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Request
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4-request/1-overview.html">
+            
+                <a href="../4-request/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4-request/2-method.html">
+            
+                <a href="../4-request/2-method.html">
+            
+                    
+                    Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4-request/3-headers.html">
+            
+                <a href="../4-request/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4-request/4-body.html">
+            
+                <a href="../4-request/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4-request/5-uploaded-files.html">
+            
+                <a href="../4-request/5-uploaded-files.html">
+            
+                    
+                    Uploaded Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4-request/6-helpers.html">
+            
+                <a href="../4-request/6-helpers.html">
+            
+                    
+                    Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4-request/7-route-object.html">
+            
+                <a href="../4-request/7-route-object.html">
+            
+                    
+                    Route Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Response
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5-response/1-overview.html">
+            
+                <a href="../5-response/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5-response/2-status.html">
+            
+                <a href="../5-response/2-status.html">
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5-response/3-headers.html">
+            
+                <a href="../5-response/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5-response/4-body.html">
+            
+                <a href="../5-response/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5-response/5-json.html">
+            
+                <a href="../5-response/5-json.html">
+            
+                    
+                    Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Routing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6-routing/1-overview.html">
+            
+                <a href="../6-routing/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6-routing/2-create-routes.html">
+            
+                <a href="../6-routing/2-create-routes.html">
+            
+                    
+                    Create Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../6-routing/3-callbacks.html">
+            
+                <a href="../6-routing/3-callbacks.html">
+            
+                    
+                    Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../6-routing/4-strategies.html">
+            
+                <a href="../6-routing/4-strategies.html">
+            
+                    
+                    Strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../6-routing/5-placeholders.html">
+            
+                <a href="../6-routing/5-placeholders.html">
+            
+                    
+                    Placeholders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../6-routing/6-names.html">
+            
+                <a href="../6-routing/6-names.html">
+            
+                    
+                    Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../6-routing/7-groups.html">
+            
+                <a href="../6-routing/7-groups.html">
+            
+                    
+                    Groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../6-routing/8-middleware.html">
+            
+                <a href="../6-routing/8-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../6-routing/9-caching.html">
+            
+                <a href="../6-routing/9-caching.html">
+            
+                    
+                    Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../6-routing/10-container-resolution.html">
+            
+                <a href="../6-routing/10-container-resolution.html">
+            
+                    
+                    Container Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Packaged Middleware
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../7-packaged-middleware/1-routing.html">
+            
+                <a href="../7-packaged-middleware/1-routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../7-packaged-middleware/2-error-handling.html">
+            
+                <a href="../7-packaged-middleware/2-error-handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../7-packaged-middleware/3-method-overriding.html">
+            
+                <a href="../7-packaged-middleware/3-method-overriding.html">
+            
+                    
+                    Method Overriding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../7-packaged-middleware/4-output-buffering.html">
+            
+                <a href="../7-packaged-middleware/4-output-buffering.html">
+            
+                    
+                    Output Buffering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../7-packaged-middleware/5-body-parsing.html">
+            
+                <a href="../7-packaged-middleware/5-body-parsing.html">
+            
+                    
+                    Body Parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../7-packaged-middleware/6-content-length.html">
+            
+                <a href="../7-packaged-middleware/6-content-length.html">
+            
+                    
+                    Content Length
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Cook Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../8-cook-book/1-trailing-in-routes.html">
+            
+                <a href="../8-cook-book/1-trailing-in-routes.html">
+            
+                    
+                    Trailing In Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../8-cook-book/2-retrieving-current-route.html">
+            
+                <a href="../8-cook-book/2-retrieving-current-route.html">
+            
+                    
+                    Retrieving Current Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../8-cook-book/3-enabling-cors.html">
+            
+                <a href="../8-cook-book/3-enabling-cors.html">
+            
+                    
+                    Enabling Cors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                <a href="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                    
+                    Uploading Files Using Post Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Source Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../9-source-code/1-catalogue.html">
+            
+                <a href="../9-source-code/1-catalogue.html">
+            
+                    
+                    Catalogue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../9-source-code/2-autoload.html">
+            
+                <a href="../9-source-code/2-autoload.html">
+            
+                    
+                    Autoload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../9-source-code/3-index.html">
+            
+                <a href="../9-source-code/3-index.html">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../9-source-code/4-repository.html">
+            
+                <a href="../9-source-code/4-repository.html">
+            
+                    
+                    Repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../9-source-code/5-logger.html">
+            
+                <a href="../9-source-code/5-logger.html">
+            
+                    
+                    Logger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../9-source-code/6-route.html">
+            
+                <a href="../9-source-code/6-route.html">
+            
+                    
+                    Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../9-source-code/7-middleware.html">
+            
+                <a href="../9-source-code/7-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../9-source-code/8-container.html">
+            
+                <a href="../9-source-code/8-container.html">
+            
+                    
+                    Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../9-source-code/9-example.html">
+            
+                <a href="../9-source-code/9-example.html">
+            
+                    
+                    Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../9-source-code/10-summary.html">
+            
+                <a href="../9-source-code/10-summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Middleware</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#middleware"><b></b>Middleware</a></li><ul><li><span class="title-icon "></span><a href="#what-is-middleware"><b></b>What is middleware?</a></li><li><span class="title-icon "></span><a href="#how-does-middleware-work"><b></b>How does middleware work?</a></li><li><span class="title-icon "></span><a href="#how-do-i-write-middleware"><b></b>How do I write middleware?</a></li><ul><li><span class="title-icon "></span><a href="#closure-middleware-example"><b></b>Closure middleware example.</a></li><li><span class="title-icon "></span><a href="#invokable-class-middleware-example"><b></b>Invokable class middleware example</a></li></ul><li><span class="title-icon "></span><a href="#how-do-i-add-middleware"><b></b>How do I add middleware?</a></li><ul><li><span class="title-icon "></span><a href="#application-middleware"><b></b>Application middleware</a></li><li><span class="title-icon "></span><a href="#route-middleware"><b></b>Route middleware</a></li><li><span class="title-icon "></span><a href="#group-middleware"><b></b>Group middleware</a></li><li><span class="title-icon "></span><a href="#passing-variables-from-middleware"><b></b>Passing variables from middleware</a></li></ul></ul></ul></div><a href="#middleware" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="middleware"><a name="middleware" class="anchor-navigation-ex-anchor" href="#middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="middleware" class="plugin-anchor" href="#middleware"><i class="fa fa-link" aria-hidden="true"></i></a>Middleware</h1>
+<blockquote>
+<p>You can run code <em>before</em> and <em>after</em> your Slim application to manipulate the Request and Response objects as you see fit. This is called <em>middleware</em>. Why would you want to do this? Perhaps you want to protect your app from cross-site request forgery. Maybe you want to authenticate requests before your app runs. Middleware is perfect for these scenarios.</p>
+</blockquote>
+<p>&#x5728;&#x5904;&#x7406;request &#x548C; response&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E4B;&#x524D;&#x6216;&#x8005;&#x4E4B;&#x540E;&#x8FD0;&#x884C;&#x903B;&#x8F91;&#x3002;&#x4E2D;&#x95F4;&#x4EF6;&#x805A;&#x5408;&#x67D0;&#x4E00;&#x7C7B;&#x903B;&#x8F91;</p>
+<h2 id="what-is-middleware"><a name="what-is-middleware" class="anchor-navigation-ex-anchor" href="#what-is-middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="what-is-middleware" class="plugin-anchor" href="#what-is-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>What is middleware?</h2>
+<blockquote>
+<p>A middleware implements the <a href="https://www.php-fig.org/psr/psr-15/" target="_blank">PSR-15 Middleware Interface</a>:</p>
+<ol>
+<li><code>Psr\Http\Message\ServerRequestInterface</code> - The PSR-7 request object</li>
+<li><code>Psr\Http\Server\RequestHandlerInterface</code> - The PSR-15 request handler object</li>
+</ol>
+<p>It can do whatever is appropriate with these objects. The only hard requirement is that a middleware <strong>MUST</strong> return an instance of <code>Psr\Http\Message\ResponseInterface</code>. Each middleware <strong>SHOULD</strong> invoke the next middleware and pass it Request and Response objects as arguments.</p>
+</blockquote>
+<p>&#x66FF;&#x6362;&#x539F;&#x5219;&#x5C31;&#x5FC5;&#x987B;&#x8981;&#x6C42;&#x9762;&#x5411;&#x63A5;&#x53E3;&#xFF0C;&#x9762;&#x5411;&#x62BD;&#x8C61;&#x7F16;&#x7A0B;</p>
+<p>&#x70ED;&#x63D2;&#x62D4;&#x539F;&#x5219;&#x5C31;&#x5FC5;&#x987B;&#x8981;&#x6C42;&#x80FD;&#x63A5;&#x53D7;&#x524D;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x80FD;&#x5524;&#x9192;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</p>
+<h2 id="how-does-middleware-work"><a name="how-does-middleware-work" class="anchor-navigation-ex-anchor" href="#how-does-middleware-work"><i class="fa fa-link" aria-hidden="true"></i></a><a name="how-does-middleware-work" class="plugin-anchor" href="#how-does-middleware-work"><i class="fa fa-link" aria-hidden="true"></i></a>How does middleware work?</h2>
+<p>do somthing</p>
+<p>$response = nextMiddleware-&gt;process($request);</p>
+<p>do somthing</p>
+<p>return  $response;</p>
+<blockquote>
+<p>Different frameworks use middleware differently. Slim adds middleware as concentric layers surrounding your core application. Each new middleware layer surrounds any existing middleware layers. The concentric structure expands outwardly as additional middleware layers are added.</p>
+<p>The last middleware layer added is the first to be executed.&#xFF08;LIFO&#xFF09;</p>
+<p>When you run the Slim application, the Request object traverses the middleware structure from the outside in. They first enter the outer-most middleware, then the next outer-most middleware, (and so on), until they ultimately arrive at the Slim application itself. After the Slim application dispatches the appropriate route, the resultant Response object exits the Slim application and traverses the middleware structure from the inside out. Ultimately, a final Response object exits the outer-most middleware, is serialized into a raw HTTP response, and is returned to the HTTP client. Here&#x2019;s a diagram that illustrates the middleware process flow:</p>
+</blockquote>
+<p><img src="../assets/middleware.png" alt="middleware" style="zoom:50%;" with="50%"></p>
+<h2 id="how-do-i-write-middleware"><a name="how-do-i-write-middleware" class="anchor-navigation-ex-anchor" href="#how-do-i-write-middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="how-do-i-write-middleware" class="plugin-anchor" href="#how-do-i-write-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>How do I write middleware?</h2>
+<p>&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x4E2D;&#x95F4;&#x4EF6;&#x63A5;&#x53E3;</p>
+<p>Middleware is a callable that accepts two arguments: a <code>Request</code> object and a <code>RequestHandler</code> object. Each middleware <strong>MUST</strong> return an instance of <code>Psr\Http\Message\ResponseInterface</code>.</p>
+<h3 id="closure-middleware-example"><a name="closure-middleware-example" class="anchor-navigation-ex-anchor" href="#closure-middleware-example"><i class="fa fa-link" aria-hidden="true"></i></a><a name="closure-middleware-example" class="plugin-anchor" href="#closure-middleware-example"><i class="fa fa-link" aria-hidden="true"></i></a>Closure middleware example.</h3>
+<p>This example middleware is a Closure.</p>
+<p>&#x95ED;&#x5305;&#x6A21;&#x5F0F;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Server</span>\<span class="hljs-title">RequestHandlerInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">RequestHandler</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">AppFactory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Psr7</span>\<span class="hljs-title">Response</span>;
+
+<span class="hljs-keyword">require</span> <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&apos;/../vendor/autoload.php&apos;</span>;
+
+$app = AppFactory::create();
+
+<span class="hljs-comment">/**
+ * Example middleware closure
+ *
+ * <span class="hljs-doctag">@param</span>  ServerRequest  $request PSR-7 request
+ * <span class="hljs-doctag">@param</span>  RequestHandler $handler PSR-15 request handler
+ *
+ * <span class="hljs-doctag">@return</span> Response
+ */</span>
+$beforeMiddleware = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, RequestHandler $handler)</span> </span>{
+    $response = $handler-&gt;handle($request);
+    $existingContent = (string) $response-&gt;getBody();
+
+    $response = <span class="hljs-keyword">new</span> Response();
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;BEFORE&apos;</span> . $existingContent);
+
+    <span class="hljs-keyword">return</span> $response;
+};
+
+$afterMiddleware = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($request, $handler)</span> </span>{
+    $response = $handler-&gt;handle($request);
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;AFTER&apos;</span>);
+    <span class="hljs-keyword">return</span> $response;
+};
+
+$app-&gt;add($beforeMiddleware);
+$app-&gt;add($afterMiddleware);
+
+<span class="hljs-comment">// ...</span>
+
+$app-&gt;run();
+</code></pre>
+<h3 id="invokable-class-middleware-example"><a name="invokable-class-middleware-example" class="anchor-navigation-ex-anchor" href="#invokable-class-middleware-example"><i class="fa fa-link" aria-hidden="true"></i></a><a name="invokable-class-middleware-example" class="plugin-anchor" href="#invokable-class-middleware-example"><i class="fa fa-link" aria-hidden="true"></i></a>Invokable class middleware example</h3>
+<p>&#x53C2;&#x8003;&#x6700;&#x65B0;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x5B9E;&#x73B0;process()</p>
+<p>This example middleware is an invokable class that implements the magic <code>__invoke()</code> method.</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Server</span>\<span class="hljs-title">RequestHandlerInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">RequestHandler</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Psr7</span>\<span class="hljs-title">Response</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleBeforeMiddleware</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Example middleware invokable class
+     *
+     * <span class="hljs-doctag">@param</span>  ServerRequest  $request PSR-7 request
+     * <span class="hljs-doctag">@param</span>  RequestHandler $handler PSR-15 request handler
+     *
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__invoke</span><span class="hljs-params">(Request $request, RequestHandler $handler)</span>: <span class="hljs-title">Response</span>
+    </span>{
+        $response = $handler-&gt;handle($request);
+        $existingContent = (string) $response-&gt;getBody();
+
+        $response = <span class="hljs-keyword">new</span> Response();
+        $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;BEFORE&apos;</span> . $existingContent);
+
+        <span class="hljs-keyword">return</span> $response;
+    }
+}
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ResponseInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Response</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Server</span>\<span class="hljs-title">RequestHandlerInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">RequestHandler</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleAfterMiddleware</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Example middleware invokable class
+     *
+     * <span class="hljs-doctag">@param</span>  ServerRequest  $request PSR-7 request
+     * <span class="hljs-doctag">@param</span>  RequestHandler $handler PSR-15 request handler
+     *
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__invoke</span><span class="hljs-params">(Request $request, RequestHandler $handler)</span>: <span class="hljs-title">Response</span>
+    </span>{
+        $response = $handler-&gt;handle($request);
+        $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;AFTER&apos;</span>);
+        <span class="hljs-keyword">return</span> $response;
+    }
+}
+</code></pre>
+<p>To use these classes as a middleware, you can use <strong>add(new ExampleMiddleware());</strong> function chain after the <strong>$app</strong> route mapping methods <strong>get(), post(), put(), patch(), delete(), options(), any()</strong> or <strong>group()</strong>, which in the code below, any one of these, could represent $subject.</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">AppFactory</span>;
+
+<span class="hljs-keyword">require</span> <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&apos;/../vendor/autoload.php&apos;</span>;
+
+$app = AppFactory::create();
+
+<span class="hljs-comment">// Add Middleware On App</span>
+$app-&gt;add(<span class="hljs-keyword">new</span> ExampleMiddleware());
+
+<span class="hljs-comment">// Add Middleware On Route</span>
+$app-&gt;get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{ ... })-&gt;add(<span class="hljs-keyword">new</span> ExampleMiddleware());
+
+<span class="hljs-comment">// Add Middleware On Group</span>
+$app-&gt;group(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{ ... })-&gt;add(<span class="hljs-keyword">new</span> ExampleMiddleware());
+
+<span class="hljs-comment">// ...</span>
+
+$app-&gt;run();
+</code></pre>
+<h2 id="how-do-i-add-middleware"><a name="how-do-i-add-middleware" class="anchor-navigation-ex-anchor" href="#how-do-i-add-middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="how-do-i-add-middleware" class="plugin-anchor" href="#how-do-i-add-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>How do I add middleware?</h2>
+<p>You may add middleware to a Slim application, to an individual Slim application route or to a route group. All scenarios accept the same middleware and implement the same middleware interface.</p>
+<h3 id="application-middleware"><a name="application-middleware" class="anchor-navigation-ex-anchor" href="#application-middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="application-middleware" class="plugin-anchor" href="#application-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>Application middleware</h3>
+<p>Application middleware is invoked for every <strong>incoming</strong> HTTP request. Add application middleware with the Slim application instance&#x2019;s <strong>add()</strong> method. This example adds the Closure middleware example above:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Server</span>\<span class="hljs-title">RequestHandlerInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">RequestHandler</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">AppFactory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Psr7</span>\<span class="hljs-title">Response</span>;
+
+<span class="hljs-keyword">require</span> <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&apos;/../vendor/autoload.php&apos;</span>;
+
+$app = AppFactory::create();
+
+$app-&gt;add(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, RequestHandler $handler)</span> </span>{
+    $response = $handler-&gt;handle($request);
+    $existingContent = (string) $response-&gt;getBody();
+
+    $response = <span class="hljs-keyword">new</span> Response();
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;BEFORE &apos;</span> . $existingContent);
+
+    <span class="hljs-keyword">return</span> $response;
+});
+
+$app-&gt;add(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, RequestHandler $handler)</span> </span>{
+    $response = $handler-&gt;handle($request);
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos; AFTER&apos;</span>);
+    <span class="hljs-keyword">return</span> $response;
+});
+
+$app-&gt;get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response, $args)</span> </span>{
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;Hello World&apos;</span>);
+    <span class="hljs-keyword">return</span> $response;
+});
+
+$app-&gt;run();
+</code></pre>
+<p>This would output this HTTP response body:</p>
+<pre><code class="lang-bash">BEFORE Hello World AFTER
+</code></pre>
+<h3 id="route-middleware"><a name="route-middleware" class="anchor-navigation-ex-anchor" href="#route-middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="route-middleware" class="plugin-anchor" href="#route-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>Route middleware</h3>
+<p>Route middleware is invoked <em>only if</em> its route matches the current HTTP request method and URI. Route middleware is specified immediately after you invoke any of the Slim application&#x2019;s routing methods (e.g., <strong>get()</strong> or <strong>post()</strong>). Each routing method returns an instance of <strong>\Slim\Route</strong>, and this class provides the same middleware interface as the Slim application instance. Add middleware to a Route with the Route instance&#x2019;s <strong>add()</strong> method. This example adds the Closure middleware example above:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ResponseInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Response</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Server</span>\<span class="hljs-title">RequestHandlerInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">RequestHandler</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">AppFactory</span>;
+
+<span class="hljs-keyword">require</span> <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&apos;/../vendor/autoload.php&apos;</span>;
+
+$app = AppFactory::create();
+
+$mw = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, RequestHandler $handler)</span> </span>{
+    $response = $handler-&gt;handle($request);
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;World&apos;</span>);
+
+    <span class="hljs-keyword">return</span> $response;
+};
+
+$app-&gt;get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response, $args)</span> </span>{
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;Hello &apos;</span>);
+
+    <span class="hljs-keyword">return</span> $response;
+})-&gt;add($mw);
+
+$app-&gt;run();
+</code></pre>
+<p>This would output this HTTP response body:</p>
+<pre><code class="lang-bash">Hello World
+</code></pre>
+<h3 id="group-middleware"><a name="group-middleware" class="anchor-navigation-ex-anchor" href="#group-middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="group-middleware" class="plugin-anchor" href="#group-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>Group middleware</h3>
+<p>In addition to the overall application, and standard routes being able to accept middleware, the <strong>group()</strong> multi-route definition functionality, also allows individual routes internally. Route group middleware is invoked <em>only if</em> its route matches one of the defined HTTP request methods and URIs from the group. To add middleware within the callback, and entire-group middleware to be set by chaining <strong>add()</strong> after the <strong>group()</strong> method.</p>
+<p>Sample Application, making use of callback middleware on a group of url-handlers</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ResponseInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Response</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Server</span>\<span class="hljs-title">RequestHandlerInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">RequestHandler</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">AppFactory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Routing</span>\<span class="hljs-title">RouteCollectorProxy</span>;
+
+<span class="hljs-keyword">require</span> <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&apos;/../vendor/autoload.php&apos;</span>;
+
+$app = AppFactory::create();
+
+$app-&gt;get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response)</span> </span>{
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;Hello World&apos;</span>);
+    <span class="hljs-keyword">return</span> $response;
+});
+
+$app-&gt;group(<span class="hljs-string">&apos;/utils&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(RouteCollectorProxy $group)</span> </span>{
+    $group-&gt;get(<span class="hljs-string">&apos;/date&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response)</span> </span>{
+        $response-&gt;getBody()-&gt;write(date(<span class="hljs-string">&apos;Y-m-d H:i:s&apos;</span>));
+        <span class="hljs-keyword">return</span> $response;
+    });
+
+    $group-&gt;get(<span class="hljs-string">&apos;/time&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response)</span> </span>{
+        $response-&gt;getBody()-&gt;write((string)time());
+        <span class="hljs-keyword">return</span> $response;
+    });
+})-&gt;add(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, RequestHandler $handler)</span> <span class="hljs-title">use</span> <span class="hljs-params">($app)</span> </span>{
+    $response = $handler-&gt;handle($request);
+    $dateOrTime = (string) $response-&gt;getBody();
+
+    $response = $app-&gt;getResponseFactory()-&gt;createResponse();
+    $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;It is now &apos;</span> . $dateOrTime . <span class="hljs-string">&apos;. Enjoy!&apos;</span>);
+
+    <span class="hljs-keyword">return</span> $response;
+});
+
+$app-&gt;run();
+</code></pre>
+<p>When calling the <strong>/utils/date</strong> method, this would output a string similar to the below</p>
+<pre><code class="lang-bash">It is now 2015-07-06 03:11:01. Enjoy!
+</code></pre>
+<p>Visiting <strong>/utils/time</strong> would output a string similar to the below</p>
+<pre><code class="lang-bash">It is now 1436148762. Enjoy!
+</code></pre>
+<p>But visiting <strong>/</strong> <em>(domain-root)</em>, would be expected to generate the following output as no middleware has been assigned</p>
+<pre><code class="lang-bash">Hello World
+</code></pre>
+<h3 id="passing-variables-from-middleware"><a name="passing-variables-from-middleware" class="anchor-navigation-ex-anchor" href="#passing-variables-from-middleware"><i class="fa fa-link" aria-hidden="true"></i></a><a name="passing-variables-from-middleware" class="plugin-anchor" href="#passing-variables-from-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>Passing variables from middleware</h3>
+<p>The easiest way to pass attributes from middleware is to use the request&#x2019;s attributes.</p>
+<p>Setting the variable in the middleware:</p>
+<pre><code class="lang-php">$request = $request-&gt;withAttribute(<span class="hljs-string">&apos;foo&apos;</span>, <span class="hljs-string">&apos;bar&apos;</span>);
+</code></pre>
+<p>Getting the variable in the route callback:</p>
+<pre><code class="lang-php">$foo = $request-&gt;getAttribute(<span class="hljs-string">&apos;foo&apos;</span>);
+</code></pre>
+<p>&#x4E2D;&#x95F4;&#x4EF6;&#x53D8;&#x91CF;&#x4FDD;&#x5B58;&#x5728;request &#x548C; response &#x5C5E;&#x6027;&#x4E2D;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2-psr-7.html" class="navigation navigation-prev " aria-label="Previous page: Psr 7">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4-dependency-container.html" class="navigation navigation-next " aria-label="Next page: Dependency Container">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Middleware","level":"1.3.3","depth":2,"next":{"title":"Dependency Container","level":"1.3.4","depth":2,"path":"2-concepts/4-dependency-container.md","ref":"2-concepts/4-dependency-container.md","articles":[]},"previous":{"title":"Psr 7","level":"1.3.2","depth":2,"path":"2-concepts/2-psr-7.md","ref":"2-concepts/2-psr-7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","-toggle-chapters","chapter-fold","expandable-chapters","-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","-donate","sharing-plus","anchor-navigation-ex","favicon","copy-code-button"],"ignores":["node_modules","_book"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/nuxseme/slim-portal"},"splitter":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"night","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico","appleTouch":"assets/favicon.ico","appleTouchMore":{"120x120":"assets/favicon.png","180x180":"assets/favicon.png"}},"github-buttons":{"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"nuxseme","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"sortedBy":"-","disableTitleFormatting":false,"variables":{},"title":"Slim Portal","language":"zh-hans","catalog":"all","links":{"Github":{"Github":"https://github.com/nuxseme/slim-portal"}},"gitbook":"3.2.3","unchanged":[],"description":"Slim","outputfile":"SUMMARY.md"},"file":{"path":"2-concepts/3-middleware.md","mtime":"2020-06-02T06:36:24.639Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-02T06:37:26.760Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

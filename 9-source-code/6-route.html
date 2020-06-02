@@ -1,0 +1,1544 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Route · Slim Portal</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nuxseme">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7-middleware.html" />
+    
+    
+    <link rel="prev" href="5-logger.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon.png">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Get Started
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1-get-started/1-home.html">
+            
+                <a href="../1-get-started/1-home.html">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1-get-started/2-installtion.html">
+            
+                <a href="../1-get-started/2-installtion.html">
+            
+                    
+                    Installtion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1-get-started/3-web-servers.html">
+            
+                <a href="../1-get-started/3-web-servers.html">
+            
+                    
+                    Web Servers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1-get-started/4-deployment.html">
+            
+                <a href="../1-get-started/4-deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2-concepts/1-application-life-cycle.html">
+            
+                <a href="../2-concepts/1-application-life-cycle.html">
+            
+                    
+                    Application Life Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2-concepts/2-psr-7.html">
+            
+                <a href="../2-concepts/2-psr-7.html">
+            
+                    
+                    Psr 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2-concepts/3-middleware.html">
+            
+                <a href="../2-concepts/3-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2-concepts/4-dependency-container.html">
+            
+                <a href="../2-concepts/4-dependency-container.html">
+            
+                    
+                    Dependency Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Application
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3-application/1-overview.html">
+            
+                <a href="../3-application/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3-application/2-notices-warings-handling.html">
+            
+                <a href="../3-application/2-notices-warings-handling.html">
+            
+                    
+                    Notices Warings Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Request
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4-request/1-overview.html">
+            
+                <a href="../4-request/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4-request/2-method.html">
+            
+                <a href="../4-request/2-method.html">
+            
+                    
+                    Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4-request/3-headers.html">
+            
+                <a href="../4-request/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4-request/4-body.html">
+            
+                <a href="../4-request/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4-request/5-uploaded-files.html">
+            
+                <a href="../4-request/5-uploaded-files.html">
+            
+                    
+                    Uploaded Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4-request/6-helpers.html">
+            
+                <a href="../4-request/6-helpers.html">
+            
+                    
+                    Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4-request/7-route-object.html">
+            
+                <a href="../4-request/7-route-object.html">
+            
+                    
+                    Route Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Response
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5-response/1-overview.html">
+            
+                <a href="../5-response/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5-response/2-status.html">
+            
+                <a href="../5-response/2-status.html">
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5-response/3-headers.html">
+            
+                <a href="../5-response/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5-response/4-body.html">
+            
+                <a href="../5-response/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5-response/5-json.html">
+            
+                <a href="../5-response/5-json.html">
+            
+                    
+                    Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Routing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6-routing/1-overview.html">
+            
+                <a href="../6-routing/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6-routing/2-create-routes.html">
+            
+                <a href="../6-routing/2-create-routes.html">
+            
+                    
+                    Create Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../6-routing/3-callbacks.html">
+            
+                <a href="../6-routing/3-callbacks.html">
+            
+                    
+                    Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../6-routing/4-strategies.html">
+            
+                <a href="../6-routing/4-strategies.html">
+            
+                    
+                    Strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../6-routing/5-placeholders.html">
+            
+                <a href="../6-routing/5-placeholders.html">
+            
+                    
+                    Placeholders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../6-routing/6-names.html">
+            
+                <a href="../6-routing/6-names.html">
+            
+                    
+                    Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../6-routing/7-groups.html">
+            
+                <a href="../6-routing/7-groups.html">
+            
+                    
+                    Groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../6-routing/8-middleware.html">
+            
+                <a href="../6-routing/8-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../6-routing/9-caching.html">
+            
+                <a href="../6-routing/9-caching.html">
+            
+                    
+                    Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../6-routing/10-container-resolution.html">
+            
+                <a href="../6-routing/10-container-resolution.html">
+            
+                    
+                    Container Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Packaged Middleware
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../7-packaged-middleware/1-routing.html">
+            
+                <a href="../7-packaged-middleware/1-routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../7-packaged-middleware/2-error-handling.html">
+            
+                <a href="../7-packaged-middleware/2-error-handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../7-packaged-middleware/3-method-overriding.html">
+            
+                <a href="../7-packaged-middleware/3-method-overriding.html">
+            
+                    
+                    Method Overriding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../7-packaged-middleware/4-output-buffering.html">
+            
+                <a href="../7-packaged-middleware/4-output-buffering.html">
+            
+                    
+                    Output Buffering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../7-packaged-middleware/5-body-parsing.html">
+            
+                <a href="../7-packaged-middleware/5-body-parsing.html">
+            
+                    
+                    Body Parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../7-packaged-middleware/6-content-length.html">
+            
+                <a href="../7-packaged-middleware/6-content-length.html">
+            
+                    
+                    Content Length
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Cook Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../8-cook-book/1-trailing-in-routes.html">
+            
+                <a href="../8-cook-book/1-trailing-in-routes.html">
+            
+                    
+                    Trailing In Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../8-cook-book/2-retrieving-current-route.html">
+            
+                <a href="../8-cook-book/2-retrieving-current-route.html">
+            
+                    
+                    Retrieving Current Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../8-cook-book/3-enabling-cors.html">
+            
+                <a href="../8-cook-book/3-enabling-cors.html">
+            
+                    
+                    Enabling Cors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                <a href="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                    
+                    Uploading Files Using Post Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Source Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="1-catalogue.html">
+            
+                <a href="1-catalogue.html">
+            
+                    
+                    Catalogue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="2-autoload.html">
+            
+                <a href="2-autoload.html">
+            
+                    
+                    Autoload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="3-index.html">
+            
+                <a href="3-index.html">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="4-repository.html">
+            
+                <a href="4-repository.html">
+            
+                    
+                    Repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="5-logger.html">
+            
+                <a href="5-logger.html">
+            
+                    
+                    Logger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.6" data-path="6-route.html">
+            
+                <a href="6-route.html">
+            
+                    
+                    Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="7-middleware.html">
+            
+                <a href="7-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="8-container.html">
+            
+                <a href="8-container.html">
+            
+                    
+                    Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="9-example.html">
+            
+                <a href="9-example.html">
+            
+                    
+                    Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="10-summary.html">
+            
+                <a href="10-summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Route</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#route"><b></b>Route</a></li><ul><li><span class="title-icon "></span><a href="#&#x68C0;&#x6D4B;uri"><b></b>&#x68C0;&#x6D4B;uri</a></li><li><span class="title-icon "></span><a href="#accessignoreacess"><b></b>Access+IgnoreAcess</a></li></ul></ul></div><a href="#route" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="route"><a name="route" class="anchor-navigation-ex-anchor" href="#route"><i class="fa fa-link" aria-hidden="true"></i></a><a name="route" class="plugin-anchor" href="#route"><i class="fa fa-link" aria-hidden="true"></i></a>Route</h1>
+<p>&#x8DEF;&#x7531;&#x7684;&#x89E3;&#x6790;&#x5230;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x5E94;&#x7684;&#x5E94;&#x7528;&#x5C42;&#x56DE;&#x8C03;&#x6D41;&#x7A0B;</p>
+<pre><code class="lang-php">&#x5927;&#x81F4;&#x6D41;&#x7A0B;
+
+&#x5E94;&#x7528;&#x5165;&#x53E3; App-&gt;handle()
+&#x4E2D;&#x95F4;&#x4EF6;&#x8C03;&#x5EA6;&#x5668; MiddlewareDispatcher-&gt;handle()
+&#x6700;&#x9760;&#x8FD1;&#x6838;&#x5FC3;&#x7684;&#x8DEF;&#x7531;&#x4E2D;&#x95F4;&#x4EF6;  &#x8DEF;&#x7531;&#x89E3;&#x51B3;&#x65B9;&#x6848;
+App &#x6784;&#x9020;&#x51FD;&#x6570;
+$this-&gt;routeResolver = $routeResolver ?? <span class="hljs-keyword">new</span> RouteResolver($this-&gt;routeCollector);
+$routeRunner = <span class="hljs-keyword">new</span> RouteRunner($this-&gt;routeResolver, $this-&gt;routeCollector-&gt;getRouteParser(), $this);
+
+<span class="hljs-keyword">if</span> (!$middlewareDispatcher) {
+  $middlewareDispatcher = <span class="hljs-keyword">new</span> MiddlewareDispatcher($routeRunner, $this-&gt;callableResolver, $container);
+} <span class="hljs-keyword">else</span> {
+  $middlewareDispatcher-&gt;seedMiddlewareStack($routeRunner);
+}
+
+$this-&gt;middlewareDispatcher = $middlewareDispatcher;
+
+
+RouteRunner handle
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle</span><span class="hljs-params">(ServerRequestInterface $request)</span>: <span class="hljs-title">ResponseInterface</span>
+    </span>{
+        <span class="hljs-comment">// If routing hasn&apos;t been done, then do it now so we can dispatch</span>
+        <span class="hljs-keyword">if</span> ($request-&gt;getAttribute(RouteContext::ROUTING_RESULTS) === <span class="hljs-keyword">null</span>) {
+            $routingMiddleware = <span class="hljs-keyword">new</span> RoutingMiddleware($this-&gt;routeResolver, $this-&gt;routeParser);
+            $request = $routingMiddleware-&gt;performRouting($request);
+        }
+
+        <span class="hljs-keyword">if</span> ($this-&gt;routeCollectorProxy !== <span class="hljs-keyword">null</span>) {
+            $request = $request-&gt;withAttribute(
+                RouteContext::BASE_PATH,
+                $this-&gt;routeCollectorProxy-&gt;getBasePath()
+            );
+        }
+
+        <span class="hljs-comment">/** <span class="hljs-doctag">@var</span> Route $route */</span>
+        $route = $request-&gt;getAttribute(RouteContext::ROUTE);
+        <span class="hljs-keyword">return</span> $route-&gt;run($request);
+    }
+
+Route run()
+   <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritdoc</span>}
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">(ServerRequestInterface $request)</span>: <span class="hljs-title">ResponseInterface</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (!$this-&gt;groupMiddlewareAppended) {
+            $this-&gt;appendGroupMiddlewareToRoute();
+        }
+
+        <span class="hljs-keyword">return</span> $this-&gt;middlewareDispatcher-&gt;handle($request);
+    }
+
+Route &#x4E5F;&#x5177;&#x5907;&#x4E2D;&#x95F4;&#x4EF6;&#x6982;&#x5FF5;&#xFF0C;&#x6700;&#x9760;&#x8FD1;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x8DEF;&#x7531;&#x89E3;&#x51B3;&#x4E2D;&#x95F4;&#x4EF6;
+   <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(
+        array $methods,
+        string $pattern,
+        $callable,
+        ResponseFactoryInterface $responseFactory,
+        CallableResolverInterface $callableResolver,
+        ?ContainerInterface $container = null,
+        ?InvocationStrategyInterface $invocationStrategy = null,
+        array $groups = [],
+        int $identifier = <span class="hljs-number">0</span>
+    )</span> </span>{
+        $this-&gt;methods = $methods;
+        $this-&gt;pattern = $pattern;
+        $this-&gt;callable = $callable;
+        $this-&gt;responseFactory = $responseFactory;
+        $this-&gt;callableResolver = $callableResolver;
+        $this-&gt;container = $container;
+        $this-&gt;invocationStrategy = $invocationStrategy ?? <span class="hljs-keyword">new</span> RequestResponse();
+        $this-&gt;groups = $groups;
+        $this-&gt;identifier = <span class="hljs-string">&apos;route&apos;</span> . $identifier;
+        $this-&gt;middlewareDispatcher = <span class="hljs-keyword">new</span> MiddlewareDispatcher($this, $callableResolver, $container);
+    }
+
+Route &#x7684;handle 
+  <span class="hljs-keyword">if</span> ($this-&gt;callableResolver <span class="hljs-keyword">instanceof</span> AdvancedCallableResolverInterface) {
+            $callable = $this-&gt;callableResolver-&gt;resolveRoute($this-&gt;callable);
+        } <span class="hljs-keyword">else</span> {
+            $callable = $this-&gt;callableResolver-&gt;resolve($this-&gt;callable);
+        }
+        $strategy = $this-&gt;invocationStrategy;
+&#x8FD4;&#x56DE;&#x8DEF;&#x7531;&#x5668;&#x5339;&#x914D;&#x7684;&#x56DE;&#x8C03;
+
+
+  CallableResolver 
+   <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolveByPredicate</span><span class="hljs-params">($toResolve, callable $predicate, string $defaultMethod)</span>: <span class="hljs-title">callable</span>
+    </span>{
+              <span class="hljs-comment">//&#x533F;&#x540D;&#x51FD;&#x6570;&#x7ED1;&#x5B9A;&#x5230;&#x5BB9;&#x5668;&#x4E0A;</span>
+        <span class="hljs-keyword">if</span> (is_callable($toResolve)) {
+            <span class="hljs-keyword">return</span> $this-&gt;bindToContainer($toResolve);
+        }
+        $resolved = $toResolve;
+        <span class="hljs-keyword">if</span> ($predicate($toResolve)) {
+            $resolved = [$toResolve, $defaultMethod];
+        }
+        <span class="hljs-keyword">if</span> (is_string($toResolve)) {
+            [$instance, $method] = $this-&gt;resolveSlimNotation($toResolve);
+            <span class="hljs-keyword">if</span> ($predicate($instance) &amp;&amp; $method === <span class="hljs-keyword">null</span>) {
+                $method = $defaultMethod;
+            }
+            $resolved = [$instance, $method ?? <span class="hljs-string">&apos;__invoke&apos;</span>];
+        }
+        $callable = $this-&gt;assertCallable($resolved, $toResolve);
+        <span class="hljs-keyword">return</span> $this-&gt;bindToContainer($callable);
+    }
+<span class="hljs-comment">//&#x533F;&#x540D;&#x51FD;&#x6570;&#x6302;&#x8F7D;&#x5230;&#x5BB9;&#x5668;&#x4E0A;  &#x5185;&#x90E8;&#x7684;this&#x6307;&#x5411;&#x5BB9;&#x5668;</span>
+<span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bindToContainer</span><span class="hljs-params">(callable $callable)</span>: <span class="hljs-title">callable</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (is_array($callable) &amp;&amp; $callable[<span class="hljs-number">0</span>] <span class="hljs-keyword">instanceof</span> Closure) {
+            $callable = $callable[<span class="hljs-number">0</span>];
+        }
+        <span class="hljs-keyword">if</span> ($this-&gt;container &amp;&amp; $callable <span class="hljs-keyword">instanceof</span> Closure) {
+            $callable = $callable-&gt;bindTo($this-&gt;container);
+        }
+        <span class="hljs-keyword">return</span> $callable;
+    }
+
+ <span class="hljs-comment">//&#x975E;&#x533F;&#x540D;&#x51FD;&#x6570; </span>
+ <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resolveSlimNotation</span><span class="hljs-params">(string $toResolve)</span>: <span class="hljs-title">array</span>
+    </span>{
+        preg_match(CallableResolver::$callablePattern, $toResolve, $matches);
+        [$class, $method] = $matches ? [$matches[<span class="hljs-number">1</span>], $matches[<span class="hljs-number">2</span>]] : [$toResolve, <span class="hljs-keyword">null</span>];
+                <span class="hljs-comment">//&#x975E;&#x533F;&#x540D;&#x51FD;&#x6570;&#x5B9E;&#x4F8B;&#x7531;&#x5BB9;&#x5668;&#x83B7;&#x53D6;</span>
+        <span class="hljs-keyword">if</span> ($this-&gt;container &amp;&amp; $this-&gt;container-&gt;has($class)) {
+            $instance = $this-&gt;container-&gt;get($class);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">if</span> (!class_exists($class)) {
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> RuntimeException(sprintf(<span class="hljs-string">&apos;Callable %s does not exist&apos;</span>, $class));
+            }
+            $instance = <span class="hljs-keyword">new</span> $class($this-&gt;container);
+        }
+        <span class="hljs-keyword">return</span> [$instance, $method];
+    }
+
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">has</span><span class="hljs-params">($name)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (! is_string($name)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> InvalidArgumentException(sprintf(
+                <span class="hljs-string">&apos;The name parameter must be of type string, %s given&apos;</span>,
+                is_object($name) ? get_class($name) : gettype($name)
+            ));
+        }
+
+        <span class="hljs-keyword">if</span> (array_key_exists($name, $this-&gt;resolvedEntries)) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        }
+
+        $definition = $this-&gt;getDefinition($name);
+        <span class="hljs-keyword">if</span> ($definition === <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        }
+
+        <span class="hljs-keyword">return</span> $this-&gt;definitionResolver-&gt;isResolvable($definition);
+    }
+<span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDefinition</span><span class="hljs-params">($name)</span>
+    </span>{
+        <span class="hljs-comment">// Local cache that avoids fetching the same definition twice</span>
+        <span class="hljs-keyword">if</span> (!array_key_exists($name, $this-&gt;fetchedDefinitions)) {
+            $this-&gt;fetchedDefinitions[$name] = $this-&gt;definitionSource-&gt;getDefinition($name);
+        }
+
+        <span class="hljs-keyword">return</span> $this-&gt;fetchedDefinitions[$name];
+    }
+SourceChain 
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDefinition</span><span class="hljs-params">(string $name, int $startIndex = <span class="hljs-number">0</span>)</span>
+    </span>{
+        $count = count($this-&gt;sources);
+        <span class="hljs-keyword">for</span> ($i = $startIndex; $i &lt; $count; ++$i) {
+            $source = $this-&gt;sources[$i];
+
+            $definition = $source-&gt;getDefinition($name);
+
+            <span class="hljs-keyword">if</span> ($definition) {
+                <span class="hljs-keyword">if</span> ($definition <span class="hljs-keyword">instanceof</span> ExtendsPreviousDefinition) {
+                    $this-&gt;resolveExtendedDefinition($definition, $i);
+                }
+
+                <span class="hljs-keyword">return</span> $definition;
+            }
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+ReflectionBasedAutowiring 
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">autowire</span><span class="hljs-params">(string $name, ObjectDefinition $definition = null)</span>
+    </span>{
+        $className = $definition ? $definition-&gt;getClassName() : $name;
+
+        <span class="hljs-keyword">if</span> (!class_exists($className) &amp;&amp; !interface_exists($className)) {
+            <span class="hljs-keyword">return</span> $definition;
+        }
+
+        $definition = $definition ?: <span class="hljs-keyword">new</span> ObjectDefinition($name);
+
+        <span class="hljs-comment">// Constructor</span>
+        $class = <span class="hljs-keyword">new</span> \ReflectionClass($className);
+        $constructor = $class-&gt;getConstructor();
+        <span class="hljs-keyword">if</span> ($constructor &amp;&amp; $constructor-&gt;isPublic()) {
+            $constructorInjection = MethodInjection::constructor($this-&gt;getParametersDefinition($constructor));
+            $definition-&gt;completeConstructorInjection($constructorInjection);
+        }
+
+        <span class="hljs-keyword">return</span> $definition;
+    }
+
+  ObjectCreator 
+  &#x6B64;&#x5904;&#x89E3;&#x6790;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5BF9;&#x5E94;&#x7684;&#x5E94;&#x7528;&#x5C42;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x6839;&#x636E;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4F9D;&#x8D56;&#x5B9E;&#x4F8B;&#x5316;&#x7C7B;
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createInstance</span><span class="hljs-params">(ObjectDefinition $definition, array $parameters)</span>
+    </span>{
+        <span class="hljs-comment">// Check that the class is instantiable</span>
+        <span class="hljs-keyword">if</span> (! $definition-&gt;isInstantiable()) {
+            <span class="hljs-comment">// Check that the class exists</span>
+            <span class="hljs-keyword">if</span> (! $definition-&gt;classExists()) {
+                <span class="hljs-keyword">throw</span> InvalidDefinition::create($definition, sprintf(
+                    <span class="hljs-string">&apos;Entry &quot;%s&quot; cannot be resolved: the class doesn\&apos;t exist&apos;</span>,
+                    $definition-&gt;getName()
+                ));
+            }
+
+            <span class="hljs-keyword">throw</span> InvalidDefinition::create($definition, sprintf(
+                <span class="hljs-string">&apos;Entry &quot;%s&quot; cannot be resolved: the class is not instantiable&apos;</span>,
+                $definition-&gt;getName()
+            ));
+        }
+
+        $classname = $definition-&gt;getClassName();
+        $classReflection = <span class="hljs-keyword">new</span> ReflectionClass($classname);
+
+        $constructorInjection = $definition-&gt;getConstructorInjection();
+
+        <span class="hljs-keyword">try</span> {
+            $args = $this-&gt;parameterResolver-&gt;resolveParameters(
+                $constructorInjection,
+                $classReflection-&gt;getConstructor(),
+                $parameters
+            );
+
+            $object = <span class="hljs-keyword">new</span> $classname(...$args);
+
+            $this-&gt;injectMethodsAndProperties($object, $definition);
+        } <span class="hljs-keyword">catch</span> (NotFoundExceptionInterface $e) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> DependencyException(sprintf(
+                <span class="hljs-string">&apos;Error while injecting dependencies into %s: %s&apos;</span>,
+                $classReflection-&gt;getName(),
+                $e-&gt;getMessage()
+            ), <span class="hljs-number">0</span>, $e);
+        } <span class="hljs-keyword">catch</span> (InvalidDefinition $e) {
+            <span class="hljs-keyword">throw</span> InvalidDefinition::create($definition, sprintf(
+                <span class="hljs-string">&apos;Entry &quot;%s&quot; cannot be resolved: %s&apos;</span>,
+                $definition-&gt;getName(),
+                $e-&gt;getMessage()
+            ));
+        }
+
+        <span class="hljs-keyword">return</span> $object;
+    }
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">declare</span>(strict_types=<span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Application</span>\<span class="hljs-title">Actions</span>\<span class="hljs-title">User</span>\<span class="hljs-title">ListUsersAction</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Application</span>\<span class="hljs-title">Actions</span>\<span class="hljs-title">User</span>\<span class="hljs-title">ViewUserAction</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ResponseInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Response</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">App</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Interfaces</span>\<span class="hljs-title">RouteCollectorProxyInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Group</span>;
+
+<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(App $app)</span> </span>{
+    $app-&gt;options(<span class="hljs-string">&apos;/{routes:.*}&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response)</span> </span>{
+        <span class="hljs-comment">// CORS Pre-Flight OPTIONS Request Handler</span>
+        <span class="hljs-keyword">return</span> $response;
+    });
+
+    $app-&gt;get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response)</span> </span>{
+        $response-&gt;getBody()-&gt;write(<span class="hljs-string">&apos;Hello world!&apos;</span>);
+        <span class="hljs-keyword">return</span> $response;
+    });
+
+    $app-&gt;group(<span class="hljs-string">&apos;/users&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Group $group)</span> </span>{
+        $group-&gt;get(<span class="hljs-string">&apos;&apos;</span>, ListUsersAction::class);
+        $group-&gt;get(<span class="hljs-string">&apos;/{id}&apos;</span>, ViewUserAction::class);
+    });
+
+    $app-&gt;group(<span class="hljs-string">&apos;/user&apos;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(\Slim\Interfaces\RouteCollectorProxyInterface $group)</span></span>{
+        $group-&gt;post(<span class="hljs-string">&apos;/login&apos;</span>, \App\Application\Controller\UserController::class.<span class="hljs-string">&apos;:login&apos;</span>);
+        $group-&gt;get(<span class="hljs-string">&apos;/logout&apos;</span>, \App\Application\Controller\UserController::class.<span class="hljs-string">&apos;:logout&apos;</span>);
+    });
+
+    $app-&gt;group(<span class="hljs-string">&apos;/ship&apos;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(\Slim\Interfaces\RouteCollectorProxyInterface $group)</span></span>{
+        $group-&gt;get(<span class="hljs-string">&apos;/list&apos;</span>, \App\Application\Controller\ShipController::class.<span class="hljs-string">&apos;:list&apos;</span>);
+        $group-&gt;post(<span class="hljs-string">&apos;/createTable&apos;</span>, \App\Application\Controller\ShipController::class.<span class="hljs-string">&apos;:createTable&apos;</span>);
+    });
+
+    $app-&gt;get(<span class="hljs-string">&apos;/user/info[/{id}]&apos;</span>, \App\Application\Controller\UserController::class.<span class="hljs-string">&apos;:info&apos;</span>);
+
+    $app-&gt;get(<span class="hljs-string">&apos;/menu&apos;</span>, \App\Application\Controller\MenuController::class.<span class="hljs-string">&apos;:list&apos;</span>);
+
+    $app-&gt;get(<span class="hljs-string">&apos;/clear&apos;</span>, \App\Application\Controller\ClearController::class.<span class="hljs-string">&apos;:handle&apos;</span>);
+
+
+    $app-&gt;post(<span class="hljs-string">&apos;/rating/handle&apos;</span>, \App\Application\Controller\RatingController::class.<span class="hljs-string">&apos;:handle&apos;</span>);
+
+
+    $app-&gt;get(<span class="hljs-string">&apos;/pdf/download&apos;</span>, \App\Application\Controller\PdfController::class.<span class="hljs-string">&apos;:download&apos;</span>);
+
+    $app-&gt;get(<span class="hljs-string">&apos;/pdf/preview&apos;</span>, \App\Application\Controller\PdfController::class.<span class="hljs-string">&apos;:preview&apos;</span>);
+
+    $app-&gt;get(<span class="hljs-string">&apos;/log/info&apos;</span>, \App\Application\Controller\LogController::class.<span class="hljs-string">&apos;:info&apos;</span>);
+};
+</code></pre>
+<p>&#x8DEF;&#x7531;&#x5206;&#x7EC4; </p>
+<pre><code class="lang-php">$app-&gt;group(<span class="hljs-string">&apos;/users&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Group $group)</span> </span>{
+        $group-&gt;get(<span class="hljs-string">&apos;&apos;</span>, ListUsersAction::class);
+        $group-&gt;get(<span class="hljs-string">&apos;/{id}&apos;</span>, ViewUserAction::class);
+    });
+</code></pre>
+<p>&#x8DEF;&#x7531;&#x53C2;&#x6570;</p>
+<pre><code class="lang-php">$app-&gt;get(<span class="hljs-string">&apos;/user/info[/{id}]&apos;</span>, \App\Application\Controller\UserController::class.<span class="hljs-string">&apos;:info&apos;</span>);
+</code></pre>
+<p>&#x9488;&#x5BF9;&#x5355;&#x4E2A;&#x6216;&#x8005;&#x5206;&#x7EC4;&#x90FD;&#x53EF;&#x4EE5;&#x6302;&#x8F7D;&#x4E2D;&#x95F4;&#x4EF6;</p>
+<p>&#x5BF9;&#x4E8E;&#x4E2D;&#x95F4;&#x4EF6; &#x9664;&#x4E86;&#x67D0;&#x4E2A;&#x8DEF;&#x7531;&#x4E4B;&#x5916;&#x7684;&#x7ED1;&#x5B9A;</p>
+<h2 id="&#x68C0;&#x6D4B;uri"><a name="&#x68C0;&#x6D4B;uri" class="anchor-navigation-ex-anchor" href="#&#x68C0;&#x6D4B;uri"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x68C0;&#x6D4B;uri" class="plugin-anchor" href="#&#x68C0;&#x6D4B;uri"><i class="fa fa-link" aria-hidden="true"></i></a>&#x68C0;&#x6D4B;uri</h2>
+<pre><code class="lang-php">$sessionId = $request-&gt;getCookieParams()[<span class="hljs-string">&apos;PHPSESSID&apos;</span>] ?: <span class="hljs-keyword">null</span>;
+
+$session = $_SESSION[$sessionId] ?? <span class="hljs-keyword">null</span>;
+
+<span class="hljs-keyword">if</span>($request-&gt;getUri()-&gt;getPath() == <span class="hljs-string">&apos;/user/login&apos;</span>) {
+<span class="hljs-keyword">return</span> $handler-&gt;handle($request);
+}
+<span class="hljs-comment">//&#x6BD4;&#x5982;&#x5BF9;&#x4E8E;&#x4E0D;&#x662F;&#x767B;&#x9646;&#x63A5;&#x53E3;&#x7684;&#x8BF7;&#x6C42;&#x90FD;&#x9700;&#x8981;&#x767B;&#x5F55;&#x6001;&#x68C0;&#x6D4B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E2D;&#x95F4;&#x4EF6;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;path </span>
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>($session)) {
+<span class="hljs-keyword">return</span> $this-&gt;unAuthorization();
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;ignore  url </p>
+<h2 id="accessignoreacess"><a name="accessignoreacess" class="anchor-navigation-ex-anchor" href="#accessignoreacess"><i class="fa fa-link" aria-hidden="true"></i></a><a name="accessignoreacess" class="plugin-anchor" href="#accessignoreacess"><i class="fa fa-link" aria-hidden="true"></i></a>Access+IgnoreAcess</h2>
+<pre><code class="lang-php">$app-&gt;group(<span class="hljs-string">&apos;&apos;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Group $group)</span></span>{
+        $group-&gt;get(<span class="hljs-string">&apos;/log/info&apos;</span>, \App\Application\Controller\LogController::class.<span class="hljs-string">&apos;:info&apos;</span>)-&gt;setName(<span class="hljs-string">&apos;this is set name&apos;</span>);
+    })-&gt;addMiddleware(<span class="hljs-keyword">new</span>  \App\Application\Middleware\AccessMiddleware());
+
+    $app-&gt;group(<span class="hljs-string">&apos;&apos;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Group $group)</span></span>{
+        $group-&gt;get(<span class="hljs-string">&apos;/log/info&apos;</span>, \App\Application\Controller\LogController::class.<span class="hljs-string">&apos;:info&apos;</span>)-&gt;setName(<span class="hljs-string">&apos;this is set name&apos;</span>);
+    })-&gt;addMiddleware(<span class="hljs-keyword">new</span>  \App\Application\Middleware\IgnoreAccessMiddleware());
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5728;Access&#x5916;&#x5C42;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;IgnoreAccess&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5206;&#x7EC4;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x5BF9;&#x4E8E;&#x4E0D;&#x9700;&#x8981;access&#x7684;&#x5206;&#x7EC4;&#x5230;&#x4E00;&#x7EC4;&#x5E76;&#x52A0;&#x8F7D;IgnoreAccessMiddleware </p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IgnoreAccessMiddleware</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Middleware</span>
+</span>{
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritdoc</span>}
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">process</span><span class="hljs-params">(Request $request, RequestHandler $handler)</span>: <span class="hljs-title">Response</span>
+    </span>{
+        <span class="hljs-keyword">echo</span>  <span class="hljs-keyword">__CLASS__</span>,<span class="hljs-keyword">__METHOD__</span>;
+        $request-&gt;withAttribute(<span class="hljs-string">&apos;ignore_access&apos;</span>,<span class="hljs-keyword">true</span>);
+                <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x5C5E;&#x6027; &#x5728;Access&#x9636;&#x6BB5;&#x68C0;&#x6D4B;</span>
+        <span class="hljs-keyword">return</span> $handler-&gt;handle($request);
+    }
+}
+</code></pre>
+<p>2&#x4E2D;&#x65B9;&#x6848;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x6682;&#x65F6;&#x6CA1;&#x627E;&#x5230;&#x5176;&#x4ED6;&#x4F18;&#x96C5;&#x7684;&#x65B9;&#x6848; </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5-logger.html" class="navigation navigation-prev " aria-label="Previous page: Logger">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7-middleware.html" class="navigation navigation-next " aria-label="Next page: Middleware">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Route","level":"1.10.6","depth":2,"next":{"title":"Middleware","level":"1.10.7","depth":2,"path":"9-source-code/7-middleware.md","ref":"9-source-code/7-middleware.md","articles":[]},"previous":{"title":"Logger","level":"1.10.5","depth":2,"path":"9-source-code/5-logger.md","ref":"9-source-code/5-logger.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","-toggle-chapters","chapter-fold","expandable-chapters","-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","-donate","sharing-plus","anchor-navigation-ex","favicon","copy-code-button"],"ignores":["node_modules","_book"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/nuxseme/slim-portal"},"splitter":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"night","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico","appleTouch":"assets/favicon.ico","appleTouchMore":{"120x120":"assets/favicon.png","180x180":"assets/favicon.png"}},"github-buttons":{"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"nuxseme","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"sortedBy":"-","disableTitleFormatting":false,"variables":{},"title":"Slim Portal","language":"zh-hans","catalog":"all","links":{"Github":{"Github":"https://github.com/nuxseme/slim-portal"}},"gitbook":"3.2.3","unchanged":[],"description":"Slim","outputfile":"SUMMARY.md"},"file":{"path":"9-source-code/6-route.md","mtime":"2020-06-02T06:36:24.643Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-02T06:37:26.760Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

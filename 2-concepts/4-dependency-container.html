@@ -1,0 +1,1355 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dependency Container · Slim Portal</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nuxseme">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="3-middleware.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon.png">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Get Started
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1-get-started/1-home.html">
+            
+                <a href="../1-get-started/1-home.html">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1-get-started/2-installtion.html">
+            
+                <a href="../1-get-started/2-installtion.html">
+            
+                    
+                    Installtion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1-get-started/3-web-servers.html">
+            
+                <a href="../1-get-started/3-web-servers.html">
+            
+                    
+                    Web Servers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1-get-started/4-deployment.html">
+            
+                <a href="../1-get-started/4-deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1-application-life-cycle.html">
+            
+                <a href="1-application-life-cycle.html">
+            
+                    
+                    Application Life Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2-psr-7.html">
+            
+                <a href="2-psr-7.html">
+            
+                    
+                    Psr 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3-middleware.html">
+            
+                <a href="3-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="4-dependency-container.html">
+            
+                <a href="4-dependency-container.html">
+            
+                    
+                    Dependency Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Application
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3-application/1-overview.html">
+            
+                <a href="../3-application/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3-application/2-notices-warings-handling.html">
+            
+                <a href="../3-application/2-notices-warings-handling.html">
+            
+                    
+                    Notices Warings Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Request
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4-request/1-overview.html">
+            
+                <a href="../4-request/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4-request/2-method.html">
+            
+                <a href="../4-request/2-method.html">
+            
+                    
+                    Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4-request/3-headers.html">
+            
+                <a href="../4-request/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4-request/4-body.html">
+            
+                <a href="../4-request/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4-request/5-uploaded-files.html">
+            
+                <a href="../4-request/5-uploaded-files.html">
+            
+                    
+                    Uploaded Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4-request/6-helpers.html">
+            
+                <a href="../4-request/6-helpers.html">
+            
+                    
+                    Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4-request/7-route-object.html">
+            
+                <a href="../4-request/7-route-object.html">
+            
+                    
+                    Route Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Response
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5-response/1-overview.html">
+            
+                <a href="../5-response/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5-response/2-status.html">
+            
+                <a href="../5-response/2-status.html">
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5-response/3-headers.html">
+            
+                <a href="../5-response/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5-response/4-body.html">
+            
+                <a href="../5-response/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5-response/5-json.html">
+            
+                <a href="../5-response/5-json.html">
+            
+                    
+                    Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Routing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6-routing/1-overview.html">
+            
+                <a href="../6-routing/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6-routing/2-create-routes.html">
+            
+                <a href="../6-routing/2-create-routes.html">
+            
+                    
+                    Create Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../6-routing/3-callbacks.html">
+            
+                <a href="../6-routing/3-callbacks.html">
+            
+                    
+                    Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../6-routing/4-strategies.html">
+            
+                <a href="../6-routing/4-strategies.html">
+            
+                    
+                    Strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../6-routing/5-placeholders.html">
+            
+                <a href="../6-routing/5-placeholders.html">
+            
+                    
+                    Placeholders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../6-routing/6-names.html">
+            
+                <a href="../6-routing/6-names.html">
+            
+                    
+                    Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../6-routing/7-groups.html">
+            
+                <a href="../6-routing/7-groups.html">
+            
+                    
+                    Groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../6-routing/8-middleware.html">
+            
+                <a href="../6-routing/8-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../6-routing/9-caching.html">
+            
+                <a href="../6-routing/9-caching.html">
+            
+                    
+                    Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../6-routing/10-container-resolution.html">
+            
+                <a href="../6-routing/10-container-resolution.html">
+            
+                    
+                    Container Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Packaged Middleware
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../7-packaged-middleware/1-routing.html">
+            
+                <a href="../7-packaged-middleware/1-routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../7-packaged-middleware/2-error-handling.html">
+            
+                <a href="../7-packaged-middleware/2-error-handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../7-packaged-middleware/3-method-overriding.html">
+            
+                <a href="../7-packaged-middleware/3-method-overriding.html">
+            
+                    
+                    Method Overriding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../7-packaged-middleware/4-output-buffering.html">
+            
+                <a href="../7-packaged-middleware/4-output-buffering.html">
+            
+                    
+                    Output Buffering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../7-packaged-middleware/5-body-parsing.html">
+            
+                <a href="../7-packaged-middleware/5-body-parsing.html">
+            
+                    
+                    Body Parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../7-packaged-middleware/6-content-length.html">
+            
+                <a href="../7-packaged-middleware/6-content-length.html">
+            
+                    
+                    Content Length
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Cook Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../8-cook-book/1-trailing-in-routes.html">
+            
+                <a href="../8-cook-book/1-trailing-in-routes.html">
+            
+                    
+                    Trailing In Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../8-cook-book/2-retrieving-current-route.html">
+            
+                <a href="../8-cook-book/2-retrieving-current-route.html">
+            
+                    
+                    Retrieving Current Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../8-cook-book/3-enabling-cors.html">
+            
+                <a href="../8-cook-book/3-enabling-cors.html">
+            
+                    
+                    Enabling Cors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                <a href="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                    
+                    Uploading Files Using Post Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Source Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../9-source-code/1-catalogue.html">
+            
+                <a href="../9-source-code/1-catalogue.html">
+            
+                    
+                    Catalogue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../9-source-code/2-autoload.html">
+            
+                <a href="../9-source-code/2-autoload.html">
+            
+                    
+                    Autoload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../9-source-code/3-index.html">
+            
+                <a href="../9-source-code/3-index.html">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../9-source-code/4-repository.html">
+            
+                <a href="../9-source-code/4-repository.html">
+            
+                    
+                    Repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../9-source-code/5-logger.html">
+            
+                <a href="../9-source-code/5-logger.html">
+            
+                    
+                    Logger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../9-source-code/6-route.html">
+            
+                <a href="../9-source-code/6-route.html">
+            
+                    
+                    Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../9-source-code/7-middleware.html">
+            
+                <a href="../9-source-code/7-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../9-source-code/8-container.html">
+            
+                <a href="../9-source-code/8-container.html">
+            
+                    
+                    Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../9-source-code/9-example.html">
+            
+                <a href="../9-source-code/9-example.html">
+            
+                    
+                    Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../9-source-code/10-summary.html">
+            
+                <a href="../9-source-code/10-summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Dependency Container</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#dependency-container"><b></b>Dependency Container</a></li><ul><li><span class="title-icon "></span><a href="#example-usage-with-php-di"><b></b>Example usage with PHP-DI</a></li><li><span class="title-icon "></span><a href="#configuring-the-application-via-a-container"><b></b>Configuring the application via a container</a></li></ul></ul></div><a href="#dependency-container" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="dependency-container"><a name="dependency-container" class="anchor-navigation-ex-anchor" href="#dependency-container"><i class="fa fa-link" aria-hidden="true"></i></a><a name="dependency-container" class="plugin-anchor" href="#dependency-container"><i class="fa fa-link" aria-hidden="true"></i></a>Dependency Container</h1>
+<blockquote>
+<p>Slim uses an optional dependency container to prepare, manage, and inject application dependencies. Slim supports containers that implement <a href="http://www.php-fig.org/psr/psr-11/" target="_blank">PSR-11</a> like <a href="http://php-di.org/doc/frameworks/slim.html" target="_blank">PHP-DI</a>.</p>
+</blockquote>
+<h2 id="example-usage-with-php-di"><a name="example-usage-with-php-di" class="anchor-navigation-ex-anchor" href="#example-usage-with-php-di"><i class="fa fa-link" aria-hidden="true"></i></a><a name="example-usage-with-php-di" class="plugin-anchor" href="#example-usage-with-php-di"><i class="fa fa-link" aria-hidden="true"></i></a>Example usage with PHP-DI</h2>
+<p>You don&#x2019;t <em>have</em> to provide a dependency container. If you do, however, you must provide an instance of the container to <code>AppFactory</code> before creating an <code>App</code>.</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Container</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ResponseInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Response</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ServerRequestInterface</span> <span class="hljs-title">as</span> <span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">AppFactory</span>;
+
+<span class="hljs-keyword">require</span> <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&apos;/../vendor/autoload.php&apos;</span>;
+
+<span class="hljs-comment">// Create Container using PHP-DI</span>
+$container = <span class="hljs-keyword">new</span> Container();
+
+<span class="hljs-comment">// Set container to create App with on AppFactory</span>
+AppFactory::setContainer($container);
+$app = AppFactory::create();
+</code></pre>
+<p>&#x6302;&#x8F7D;&#x670D;&#x52A1;&#x5230;&#x5BB9;&#x5668;</p>
+<p>&#x914D;&#x7F6E;&#x4E5F;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x6302;&#x8F7D;&#x5230;&#x914D;&#x7F6E;&#x9879;</p>
+<pre><code class="lang-php">$container-&gt;set(<span class="hljs-string">&apos;myService&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    $settings = [...];
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> MyService($settings);
+});
+</code></pre>
+<p>You can fetch services from your container explicitly as well as from inside a Slim application route like this:</p>
+<p>&#x95ED;&#x5305;&#x88AB;&#x7ED1;&#x5B9A;&#x5230;&#x4E86;&#x5BB9;&#x5668;&#x4E0A; </p>
+<pre><code class="lang-php"><span class="hljs-comment">/**
+ * Example GET route
+ *
+ * <span class="hljs-doctag">@param</span>  ServerRequestInterface $request  PSR-7 request
+ * <span class="hljs-doctag">@param</span>  ResponseInterface      $response  PSR-7 response
+ * <span class="hljs-doctag">@param</span>  array                  $args Route parameters
+ *
+ * <span class="hljs-doctag">@return</span> ResponseInterface
+ */</span>
+$app-&gt;get(<span class="hljs-string">&apos;/foo&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response, $args)</span> </span>{
+    $myService = $this-&gt;get(<span class="hljs-string">&apos;myService&apos;</span>);
+
+    <span class="hljs-comment">// ...do something with $myService...</span>
+
+    <span class="hljs-keyword">return</span> $response;
+});
+</code></pre>
+<p>To test if a service exists in the container before using it, use the <code>has()</code> method, like this:</p>
+<pre><code class="lang-php"><span class="hljs-comment">/**
+ * Example GET route
+ *
+ * <span class="hljs-doctag">@param</span>  ServerRequestInterface $request  PSR-7 request
+ * <span class="hljs-doctag">@param</span>  ResponseInterface      $response  PSR-7 response
+ * <span class="hljs-doctag">@param</span>  array                  $args Route parameters
+ *
+ * <span class="hljs-doctag">@return</span> ResponseInterface
+ */</span>
+$app-&gt;get(<span class="hljs-string">&apos;/foo&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Request $request, Response $response, $args)</span> </span>{
+    <span class="hljs-keyword">if</span> ($this-&gt;has(<span class="hljs-string">&apos;myService&apos;</span>)) {
+        $myService = $this-&gt;get(<span class="hljs-string">&apos;myService&apos;</span>);
+    }
+    <span class="hljs-keyword">return</span> $response;
+});
+</code></pre>
+<h2 id="configuring-the-application-via-a-container"><a name="configuring-the-application-via-a-container" class="anchor-navigation-ex-anchor" href="#configuring-the-application-via-a-container"><i class="fa fa-link" aria-hidden="true"></i></a><a name="configuring-the-application-via-a-container" class="plugin-anchor" href="#configuring-the-application-via-a-container"><i class="fa fa-link" aria-hidden="true"></i></a>Configuring the application via a container</h2>
+<p>In case you want to create the <code>App</code> with dependencies already defined in your container, you can use the <code>AppFactory::createFromContainer()</code> method.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">MyResponseFactory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Container</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Container</span>\<span class="hljs-title">ContainerInterface</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ResponseFactoryInterface</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">Factory</span>\<span class="hljs-title">AppFactory</span>;
+
+<span class="hljs-keyword">require_once</span> <span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">&apos;/../vendor/autoload.php&apos;</span>;
+
+<span class="hljs-comment">// Create Container using PHP-DI</span>
+$container = <span class="hljs-keyword">new</span> Container();
+
+<span class="hljs-comment">// Add custom response factory</span>
+$container-&gt;set(ResponseFactoryInterface::class, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(ContainerInterface $container)</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> MyResponseFactory(...);
+});
+
+<span class="hljs-comment">// Configure the application via container</span>
+$app = AppFactory::createFromContainer($container);
+
+<span class="hljs-comment">// ...</span>
+
+$app-&gt;run();
+</code></pre>
+<p>Supported <code>App</code> dependencies are:</p>
+<ul>
+<li>Psr\Http\Message\ResponseFactoryInterface</li>
+<li>Slim\Interfaces\CallableResolverInterface</li>
+<li>Slim\Interfaces\RouteCollectorInterface</li>
+<li>Slim\Interfaces\RouteResolverInterface</li>
+<li>Slim\Interfaces\MiddlewareDispatcherInterface</li>
+</ul>
+<p>Slim 4&#x7684;&#x5BB9;&#x5668;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x5728;&#x6784;&#x5EFA;Controller&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5F53;&#x7740;__constract&#x7684;&#x53C2;&#x6570;&#x4F20;&#x5165;&#xFF0C;&#x6CA1;&#x627E;&#x5230;&#x5176;&#x4ED6;&#x4F18;&#x96C5;&#x7684;&#x65B9;&#x5F0F;</p>
+<pre><code class="lang-php"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> LoggerInterface $logger
+ * <span class="hljs-doctag">@param</span> UserRepository  $userRepository
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(LoggerInterface $logger, UserRepository $userRepository,Container $container)</span>
+</span>{
+    <span class="hljs-keyword">parent</span>::__construct($logger);
+    $this-&gt;userRepository = $userRepository;
+    $this-&gt;container = $container;
+}
+</code></pre>
+<p>&#x5E94;&#x7528;&#x5C42; Slim&#x7684;&#x4F8B;&#x5B50;&#x662F;&#x4E00;&#x4E9B;Action&#xFF0C;&#x7ED1;&#x5B9A;&#x5230;&#x4E86;&#x5BB9;&#x5668;&#x7684;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x5C5E;&#x6027;&#x4E0B;&#x9762;</p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReflectionBasedAutowiring</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">DefinitionSource</span>, <span class="hljs-title">Autowiring</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">autowire</span><span class="hljs-params">(string $name, ObjectDefinition $definition = null)</span>
+    </span>{
+        $className = $definition ? $definition-&gt;getClassName() : $name;
+
+        <span class="hljs-keyword">if</span> (!class_exists($className) &amp;&amp; !interface_exists($className)) {
+            <span class="hljs-keyword">return</span> $definition;
+        }
+
+        $definition = $definition ?: <span class="hljs-keyword">new</span> ObjectDefinition($name);
+
+        <span class="hljs-comment">// Constructor</span>
+        $class = <span class="hljs-keyword">new</span> \ReflectionClass($className);
+        $constructor = $class-&gt;getConstructor();
+        <span class="hljs-keyword">if</span> ($constructor &amp;&amp; $constructor-&gt;isPublic()) {
+            $constructorInjection = MethodInjection::constructor($this-&gt;getParametersDefinition($constructor));
+            $definition-&gt;completeConstructorInjection($constructorInjection);
+        }
+      <span class="hljs-comment">//&#x8FD9;&#x91CC;&#x89E3;&#x6790;&#x4E86;&#x8C03;&#x7528;&#x7684;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+
+        <span class="hljs-keyword">return</span> $definition;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDefinition</span><span class="hljs-params">(string $name)</span>
+    </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;autowire($name);
+    }
+    ...
+ }
+</code></pre>
+<p>Tips: Slim &#x54CD;&#x5E94;response&#x4E4B;&#x524D; &#x6E05;&#x7A7A;&#x4E86;&#x7F13;&#x51B2;&#x8F93;&#x51FA;&#xFF0C;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x8C03;&#x8BD5;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x6B64;&#x5904;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">declare</span>(strict_types=<span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Application</span>\<span class="hljs-title">ResponseEmitter</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Message</span>\<span class="hljs-title">ResponseInterface</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Slim</span>\<span class="hljs-title">ResponseEmitter</span> <span class="hljs-title">as</span> <span class="hljs-title">SlimResponseEmitter</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ResponseEmitter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SlimResponseEmitter</span>
+</span>{
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritdoc</span>}
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">emit</span><span class="hljs-params">(ResponseInterface $response)</span>: <span class="hljs-title">void</span>
+    </span>{
+        <span class="hljs-comment">// This variable should be set to the allowed host from which your API can be accessed with</span>
+        $origin = <span class="hljs-keyword">isset</span>($_SERVER[<span class="hljs-string">&apos;HTTP_ORIGIN&apos;</span>]) ? $_SERVER[<span class="hljs-string">&apos;HTTP_ORIGIN&apos;</span>] : <span class="hljs-string">&apos;&apos;</span>;
+
+        $response = $response
+            -&gt;withHeader(<span class="hljs-string">&apos;Access-Control-Allow-Credentials&apos;</span>, <span class="hljs-string">&apos;true&apos;</span>)
+            -&gt;withHeader(<span class="hljs-string">&apos;Access-Control-Allow-Origin&apos;</span>, $origin)
+            -&gt;withHeader(<span class="hljs-string">&apos;Access-Control-Allow-Headers&apos;</span>, <span class="hljs-string">&apos;X-Requested-With, Content-Type, Accept, Origin, Authorization&apos;</span>)
+            -&gt;withHeader(<span class="hljs-string">&apos;Access-Control-Allow-Methods&apos;</span>, <span class="hljs-string">&apos;GET, POST, PUT, PATCH, DELETE, OPTIONS&apos;</span>)
+            -&gt;withHeader(<span class="hljs-string">&apos;Cache-Control&apos;</span>, <span class="hljs-string">&apos;no-store, no-cache, must-revalidate, max-age=0&apos;</span>)
+            -&gt;withAddedHeader(<span class="hljs-string">&apos;Cache-Control&apos;</span>, <span class="hljs-string">&apos;post-check=0, pre-check=0&apos;</span>)
+            -&gt;withHeader(<span class="hljs-string">&apos;Pragma&apos;</span>, <span class="hljs-string">&apos;no-cache&apos;</span>);
+      <span class="hljs-comment">//&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x914D;&#x7F6E;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x6CE8;&#x91CA;&#x6389;&#x5DF2;&#x83B7;&#x5F97;&#x6253;&#x5370;&#x7684;&#x8C03;&#x8BD5;&#x6570;&#x636E;</span>
+       <span class="hljs-comment">// if (ob_get_contents()) {</span>
+       <span class="hljs-comment">//     ob_clean();</span>
+       <span class="hljs-comment">//}</span>
+        <span class="hljs-keyword">parent</span>::emit($response);
+    }
+}
+</code></pre>
+<p>Slim DI\Definition\Definition &#x8FD9;&#x4E2A;&#x5E93;&#x5904;&#x7406;&#x4E86;&#x907F;&#x514D;&#x7C7B;&#x591A;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x903B;&#x8F91;...</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3-middleware.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Middleware">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Dependency Container","level":"1.3.4","depth":2,"next":{"title":"Application","level":"1.4","depth":1,"ref":"","articles":[{"title":"Overview","level":"1.4.1","depth":2,"path":"3-application/1-overview.md","ref":"3-application/1-overview.md","articles":[]},{"title":"Notices Warings Handling","level":"1.4.2","depth":2,"path":"3-application/2-notices-warings-handling.md","ref":"3-application/2-notices-warings-handling.md","articles":[]}]},"previous":{"title":"Middleware","level":"1.3.3","depth":2,"path":"2-concepts/3-middleware.md","ref":"2-concepts/3-middleware.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","-toggle-chapters","chapter-fold","expandable-chapters","-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","-donate","sharing-plus","anchor-navigation-ex","favicon","copy-code-button"],"ignores":["node_modules","_book"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/nuxseme/slim-portal"},"splitter":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"night","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico","appleTouch":"assets/favicon.ico","appleTouchMore":{"120x120":"assets/favicon.png","180x180":"assets/favicon.png"}},"github-buttons":{"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"nuxseme","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"sortedBy":"-","disableTitleFormatting":false,"variables":{},"title":"Slim Portal","language":"zh-hans","catalog":"all","links":{"Github":{"Github":"https://github.com/nuxseme/slim-portal"}},"gitbook":"3.2.3","unchanged":[],"description":"Slim","outputfile":"SUMMARY.md"},"file":{"path":"2-concepts/4-dependency-container.md","mtime":"2020-06-02T06:36:24.639Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-02T06:37:26.760Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

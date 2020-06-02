@@ -1,0 +1,1600 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Container · Slim Portal</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nuxseme">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="9-example.html" />
+    
+    
+    <link rel="prev" href="7-middleware.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon.png">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Get Started
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1-get-started/1-home.html">
+            
+                <a href="../1-get-started/1-home.html">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1-get-started/2-installtion.html">
+            
+                <a href="../1-get-started/2-installtion.html">
+            
+                    
+                    Installtion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1-get-started/3-web-servers.html">
+            
+                <a href="../1-get-started/3-web-servers.html">
+            
+                    
+                    Web Servers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1-get-started/4-deployment.html">
+            
+                <a href="../1-get-started/4-deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2-concepts/1-application-life-cycle.html">
+            
+                <a href="../2-concepts/1-application-life-cycle.html">
+            
+                    
+                    Application Life Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2-concepts/2-psr-7.html">
+            
+                <a href="../2-concepts/2-psr-7.html">
+            
+                    
+                    Psr 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2-concepts/3-middleware.html">
+            
+                <a href="../2-concepts/3-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2-concepts/4-dependency-container.html">
+            
+                <a href="../2-concepts/4-dependency-container.html">
+            
+                    
+                    Dependency Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Application
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3-application/1-overview.html">
+            
+                <a href="../3-application/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3-application/2-notices-warings-handling.html">
+            
+                <a href="../3-application/2-notices-warings-handling.html">
+            
+                    
+                    Notices Warings Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Request
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4-request/1-overview.html">
+            
+                <a href="../4-request/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4-request/2-method.html">
+            
+                <a href="../4-request/2-method.html">
+            
+                    
+                    Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4-request/3-headers.html">
+            
+                <a href="../4-request/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4-request/4-body.html">
+            
+                <a href="../4-request/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4-request/5-uploaded-files.html">
+            
+                <a href="../4-request/5-uploaded-files.html">
+            
+                    
+                    Uploaded Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4-request/6-helpers.html">
+            
+                <a href="../4-request/6-helpers.html">
+            
+                    
+                    Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4-request/7-route-object.html">
+            
+                <a href="../4-request/7-route-object.html">
+            
+                    
+                    Route Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Response
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5-response/1-overview.html">
+            
+                <a href="../5-response/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5-response/2-status.html">
+            
+                <a href="../5-response/2-status.html">
+            
+                    
+                    Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5-response/3-headers.html">
+            
+                <a href="../5-response/3-headers.html">
+            
+                    
+                    Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5-response/4-body.html">
+            
+                <a href="../5-response/4-body.html">
+            
+                    
+                    Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5-response/5-json.html">
+            
+                <a href="../5-response/5-json.html">
+            
+                    
+                    Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Routing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6-routing/1-overview.html">
+            
+                <a href="../6-routing/1-overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6-routing/2-create-routes.html">
+            
+                <a href="../6-routing/2-create-routes.html">
+            
+                    
+                    Create Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../6-routing/3-callbacks.html">
+            
+                <a href="../6-routing/3-callbacks.html">
+            
+                    
+                    Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../6-routing/4-strategies.html">
+            
+                <a href="../6-routing/4-strategies.html">
+            
+                    
+                    Strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../6-routing/5-placeholders.html">
+            
+                <a href="../6-routing/5-placeholders.html">
+            
+                    
+                    Placeholders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../6-routing/6-names.html">
+            
+                <a href="../6-routing/6-names.html">
+            
+                    
+                    Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../6-routing/7-groups.html">
+            
+                <a href="../6-routing/7-groups.html">
+            
+                    
+                    Groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../6-routing/8-middleware.html">
+            
+                <a href="../6-routing/8-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../6-routing/9-caching.html">
+            
+                <a href="../6-routing/9-caching.html">
+            
+                    
+                    Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../6-routing/10-container-resolution.html">
+            
+                <a href="../6-routing/10-container-resolution.html">
+            
+                    
+                    Container Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Packaged Middleware
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../7-packaged-middleware/1-routing.html">
+            
+                <a href="../7-packaged-middleware/1-routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../7-packaged-middleware/2-error-handling.html">
+            
+                <a href="../7-packaged-middleware/2-error-handling.html">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../7-packaged-middleware/3-method-overriding.html">
+            
+                <a href="../7-packaged-middleware/3-method-overriding.html">
+            
+                    
+                    Method Overriding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../7-packaged-middleware/4-output-buffering.html">
+            
+                <a href="../7-packaged-middleware/4-output-buffering.html">
+            
+                    
+                    Output Buffering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../7-packaged-middleware/5-body-parsing.html">
+            
+                <a href="../7-packaged-middleware/5-body-parsing.html">
+            
+                    
+                    Body Parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../7-packaged-middleware/6-content-length.html">
+            
+                <a href="../7-packaged-middleware/6-content-length.html">
+            
+                    
+                    Content Length
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Cook Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../8-cook-book/1-trailing-in-routes.html">
+            
+                <a href="../8-cook-book/1-trailing-in-routes.html">
+            
+                    
+                    Trailing In Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../8-cook-book/2-retrieving-current-route.html">
+            
+                <a href="../8-cook-book/2-retrieving-current-route.html">
+            
+                    
+                    Retrieving Current Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../8-cook-book/3-enabling-cors.html">
+            
+                <a href="../8-cook-book/3-enabling-cors.html">
+            
+                    
+                    Enabling Cors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                <a href="../8-cook-book/4-uploading-files-using-post-forms.html">
+            
+                    
+                    Uploading Files Using Post Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Source Code
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="1-catalogue.html">
+            
+                <a href="1-catalogue.html">
+            
+                    
+                    Catalogue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="2-autoload.html">
+            
+                <a href="2-autoload.html">
+            
+                    
+                    Autoload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="3-index.html">
+            
+                <a href="3-index.html">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="4-repository.html">
+            
+                <a href="4-repository.html">
+            
+                    
+                    Repository
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="5-logger.html">
+            
+                <a href="5-logger.html">
+            
+                    
+                    Logger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="6-route.html">
+            
+                <a href="6-route.html">
+            
+                    
+                    Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="7-middleware.html">
+            
+                <a href="7-middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.8" data-path="8-container.html">
+            
+                <a href="8-container.html">
+            
+                    
+                    Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="9-example.html">
+            
+                <a href="9-example.html">
+            
+                    
+                    Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="10-summary.html">
+            
+                <a href="10-summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Container</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#container"><b></b>Container</a></li><ul><li><span class="title-icon "></span><a href="#&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;"><b></b>&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;</a></li></ul></ul></div><a href="#container" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="container"><a name="container" class="anchor-navigation-ex-anchor" href="#container"><i class="fa fa-link" aria-hidden="true"></i></a><a name="container" class="plugin-anchor" href="#container"><i class="fa fa-link" aria-hidden="true"></i></a>Container</h1>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">declare</span>(strict_types=<span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">DI</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Compiler</span>\<span class="hljs-title">Compiler</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">AnnotationBasedAutowiring</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">DefinitionArray</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">DefinitionFile</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">DefinitionSource</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">NoAutowiring</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">ReflectionBasedAutowiring</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">SourceCache</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">SourceChain</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Proxy</span>\<span class="hljs-title">ProxyFactory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">InvalidArgumentException</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Container</span>\<span class="hljs-title">ContainerInterface</span>;
+
+<span class="hljs-comment">/**
+ * Helper to create and configure a Container.
+ *
+ * With the default options, the container created is appropriate for the development environment.
+ *
+ * Example:
+ *
+ *     $builder = new ContainerBuilder();
+ *     $container = $builder-&gt;build();
+ *
+ * <span class="hljs-doctag">@api</span>
+ *
+ * <span class="hljs-doctag">@since</span>  3.2
+ * <span class="hljs-doctag">@author</span> Matthieu Napoli &lt;matthieu<span class="hljs-doctag">@mnapoli</span>.fr&gt;
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ContainerBuilder</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Name of the container class, used to create the container.
+     * <span class="hljs-doctag">@var</span> string
+     */</span>
+    <span class="hljs-keyword">private</span> $containerClass;
+
+    <span class="hljs-comment">/**
+     * Name of the container parent class, used on compiled container.
+     * <span class="hljs-doctag">@var</span> string
+     */</span>
+    <span class="hljs-keyword">private</span> $containerParentClass;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> bool
+     */</span>
+    <span class="hljs-keyword">private</span> $useAutowiring = <span class="hljs-keyword">true</span>; <span class="hljs-comment">//&#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x53CD;&#x5C04;&#x81EA;&#x52A8;&#x88C5;&#x914D;&#x5668;</span>
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> bool
+     */</span>
+    <span class="hljs-keyword">private</span> $useAnnotations = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> bool
+     */</span>
+    <span class="hljs-keyword">private</span> $ignorePhpDocErrors = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">/**
+     * If true, write the proxies to disk to improve performances.
+     * <span class="hljs-doctag">@var</span> bool
+     */</span>
+    <span class="hljs-keyword">private</span> $writeProxiesToFile = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">/**
+     * Directory where to write the proxies (if $writeProxiesToFile is enabled).
+     * <span class="hljs-doctag">@var</span> string|null
+     */</span>
+    <span class="hljs-keyword">private</span> $proxyDirectory;
+
+    <span class="hljs-comment">/**
+     * If PHP-DI is wrapped in another container, this references the wrapper.
+     * <span class="hljs-doctag">@var</span> ContainerInterface
+     */</span>
+    <span class="hljs-keyword">private</span> $wrapperContainer;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> DefinitionSource[]|string[]|array[]
+     */</span>
+    <span class="hljs-keyword">private</span> $definitionSources = [];
+
+    <span class="hljs-comment">/**
+     * Whether the container has already been built.
+     * <span class="hljs-doctag">@var</span> bool
+     */</span>
+    <span class="hljs-keyword">private</span> $locked = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> string|null
+     */</span>
+    <span class="hljs-keyword">private</span> $compileToDirectory;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> bool
+     */</span>
+    <span class="hljs-keyword">private</span> $sourceCache = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> string
+     */</span>
+    <span class="hljs-keyword">protected</span> $sourceCacheNamespace;
+
+    <span class="hljs-comment">/**
+     * Build a container configured for the dev environment.
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buildDevContainer</span><span class="hljs-params">()</span> : <span class="hljs-title">Container</span>
+    </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Container;
+    }
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@param</span> string $containerClass Name of the container class, used to create the container.
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(string $containerClass = Container::class)</span>
+    </span>{
+        $this-&gt;containerClass = $containerClass;
+    }
+
+    <span class="hljs-comment">/**
+     * Build and return a container.
+     *
+     * <span class="hljs-doctag">@return</span> Container
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">build</span><span class="hljs-params">()</span>
+    </span>{
+        $sources = array_reverse($this-&gt;definitionSources);
+
+        <span class="hljs-keyword">if</span> ($this-&gt;useAnnotations) {
+            $autowiring = <span class="hljs-keyword">new</span> AnnotationBasedAutowiring($this-&gt;ignorePhpDocErrors);
+            $sources[] = $autowiring;
+        } <span class="hljs-keyword">elseif</span> ($this-&gt;useAutowiring) {
+          <span class="hljs-comment">//&#x8FD9;&#x91CC;&#x89E3;&#x6790;&#x94FE; &#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x53CD;&#x5C04;</span>
+            $autowiring = <span class="hljs-keyword">new</span> ReflectionBasedAutowiring;
+            $sources[] = $autowiring;
+        } <span class="hljs-keyword">else</span> {
+            $autowiring = <span class="hljs-keyword">new</span> NoAutowiring;
+        }
+
+        $sources = array_map(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($definitions)</span> <span class="hljs-title">use</span> <span class="hljs-params">($autowiring)</span> </span>{
+            <span class="hljs-keyword">if</span> (is_string($definitions)) {
+                <span class="hljs-comment">// File</span>
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DefinitionFile($definitions, $autowiring);
+            } <span class="hljs-keyword">elseif</span> (is_array($definitions)) {
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DefinitionArray($definitions, $autowiring);
+            }
+
+            <span class="hljs-keyword">return</span> $definitions;
+        }, $sources);
+        $source = <span class="hljs-keyword">new</span> SourceChain($sources);
+
+        <span class="hljs-comment">// Mutable definition source</span>
+        $source-&gt;setMutableDefinitionSource(<span class="hljs-keyword">new</span> DefinitionArray([], $autowiring));
+
+        <span class="hljs-keyword">if</span> ($this-&gt;sourceCache) {
+            <span class="hljs-keyword">if</span> (!SourceCache::isSupported()) {
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> \<span class="hljs-keyword">Exception</span>(<span class="hljs-string">&apos;APCu is not enabled, PHP-DI cannot use it as a cache&apos;</span>);
+            }
+            <span class="hljs-comment">// Wrap the source with the cache decorator</span>
+            $source = <span class="hljs-keyword">new</span> SourceCache($source, $this-&gt;sourceCacheNamespace);
+        }
+
+        $proxyFactory = <span class="hljs-keyword">new</span> ProxyFactory(
+            $this-&gt;writeProxiesToFile,
+            $this-&gt;proxyDirectory
+        );
+
+        $this-&gt;locked = <span class="hljs-keyword">true</span>;
+
+        $containerClass = $this-&gt;containerClass;
+
+        <span class="hljs-keyword">if</span> ($this-&gt;compileToDirectory) {
+            $compiler = <span class="hljs-keyword">new</span> Compiler($proxyFactory);
+            $compiledContainerFile = $compiler-&gt;compile(
+                $source,
+                $this-&gt;compileToDirectory,
+                $containerClass,
+                $this-&gt;containerParentClass,
+                $this-&gt;useAutowiring || $this-&gt;useAnnotations
+            );
+            <span class="hljs-comment">// Only load the file if it hasn&apos;t been already loaded</span>
+            <span class="hljs-comment">// (the container can be created multiple times in the same process)</span>
+            <span class="hljs-keyword">if</span> (!class_exists($containerClass, <span class="hljs-keyword">false</span>)) {
+                <span class="hljs-keyword">require</span> $compiledContainerFile;
+            }
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> $containerClass($source, $proxyFactory, $this-&gt;wrapperContainer);
+    }
+
+   .
+   .
+}
+</code></pre>
+<p>&#x6302;&#x5728;&#x5230;App&#x4E0A;</p>
+<pre><code class="lang-php">AppFactory::setContainer($container);
+$app = AppFactory::create();
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">declare</span>(strict_types=<span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">DI</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Definition</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Exception</span>\<span class="hljs-title">InvalidDefinition</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">FactoryDefinition</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Helper</span>\<span class="hljs-title">DefinitionHelper</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">InstanceDefinition</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">ObjectDefinition</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Resolver</span>\<span class="hljs-title">DefinitionResolver</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Resolver</span>\<span class="hljs-title">ResolverDispatcher</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">DefinitionArray</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">MutableDefinitionSource</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">ReflectionBasedAutowiring</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">Source</span>\<span class="hljs-title">SourceChain</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Definition</span>\<span class="hljs-title">ValueDefinition</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Invoker</span>\<span class="hljs-title">DefinitionParameterResolver</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">DI</span>\<span class="hljs-title">Proxy</span>\<span class="hljs-title">ProxyFactory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">InvalidArgumentException</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Invoker</span>\<span class="hljs-title">Invoker</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Invoker</span>\<span class="hljs-title">InvokerInterface</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Invoker</span>\<span class="hljs-title">ParameterResolver</span>\<span class="hljs-title">AssociativeArrayResolver</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Invoker</span>\<span class="hljs-title">ParameterResolver</span>\<span class="hljs-title">Container</span>\<span class="hljs-title">TypeHintContainerResolver</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Invoker</span>\<span class="hljs-title">ParameterResolver</span>\<span class="hljs-title">DefaultValueResolver</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Invoker</span>\<span class="hljs-title">ParameterResolver</span>\<span class="hljs-title">NumericArrayResolver</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Invoker</span>\<span class="hljs-title">ParameterResolver</span>\<span class="hljs-title">ResolverChain</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Container</span>\<span class="hljs-title">ContainerInterface</span>;
+
+<span class="hljs-comment">/**
+ * Dependency Injection Container.
+ *
+ * <span class="hljs-doctag">@api</span>
+ *
+ * <span class="hljs-doctag">@author</span> Matthieu Napoli &lt;matthieu<span class="hljs-doctag">@mnapoli</span>.fr&gt;
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Container</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">ContainerInterface</span>, <span class="hljs-title">FactoryInterface</span>, <span class="hljs-title">InvokerInterface</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Map of entries that are already resolved.
+     * <span class="hljs-doctag">@var</span> array
+     */</span>
+    <span class="hljs-keyword">protected</span> $resolvedEntries = [];
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> MutableDefinitionSource
+     */</span>
+    <span class="hljs-keyword">private</span> $definitionSource;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> DefinitionResolver
+     */</span>
+    <span class="hljs-keyword">private</span> $definitionResolver;
+
+    <span class="hljs-comment">/**
+     * Map of definitions that are already fetched (local cache).
+     *
+     * <span class="hljs-doctag">@var</span> (Definition|null)[]
+     */</span>
+    <span class="hljs-keyword">private</span> $fetchedDefinitions = [];
+
+    <span class="hljs-comment">/**
+     * Array of entries being resolved. Used to avoid circular dependencies and infinite loops.
+     * <span class="hljs-doctag">@var</span> array
+     */</span>
+    <span class="hljs-keyword">protected</span> $entriesBeingResolved = [];
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> InvokerInterface|null
+     */</span>
+    <span class="hljs-keyword">private</span> $invoker;
+
+    <span class="hljs-comment">/**
+     * Container that wraps this container. If none, points to $this.
+     *
+     * <span class="hljs-doctag">@var</span> ContainerInterface
+     */</span>
+    <span class="hljs-keyword">protected</span> $delegateContainer;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> ProxyFactory
+     */</span>
+    <span class="hljs-keyword">protected</span> $proxyFactory;
+
+    <span class="hljs-comment">/**
+     * Use `$container = new Container()` if you want a container with the default configuration.
+     *
+     * If you want to customize the container&apos;s behavior, you are discouraged to create and pass the
+     * dependencies yourself, the ContainerBuilder class is here to help you instead.
+     *
+     * <span class="hljs-doctag">@see</span> ContainerBuilder
+     *
+     * <span class="hljs-doctag">@param</span> ContainerInterface $wrapperContainer If the container is wrapped by another container.
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(
+        MutableDefinitionSource $definitionSource = null,
+        ProxyFactory $proxyFactory = null,
+        ContainerInterface $wrapperContainer = null
+    )</span> </span>{
+        $this-&gt;delegateContainer = $wrapperContainer ?: $this;
+
+        $this-&gt;definitionSource = $definitionSource ?: $this-&gt;createDefaultDefinitionSource();
+        $this-&gt;proxyFactory = $proxyFactory ?: <span class="hljs-keyword">new</span> ProxyFactory(<span class="hljs-keyword">false</span>);
+        $this-&gt;definitionResolver = <span class="hljs-keyword">new</span> ResolverDispatcher($this-&gt;delegateContainer, $this-&gt;proxyFactory);
+
+        <span class="hljs-comment">// Auto-register the container</span>
+        $this-&gt;resolvedEntries = [
+            <span class="hljs-keyword">self</span>::class =&gt; $this,
+            ContainerInterface::class =&gt; $this-&gt;delegateContainer,
+            FactoryInterface::class =&gt; $this,
+            InvokerInterface::class =&gt; $this,
+        ];
+    }
+
+    <span class="hljs-comment">/**
+     * Returns an entry of the container by its name.
+     *
+     * <span class="hljs-doctag">@param</span> string $name Entry name or a class name.
+     *
+     * <span class="hljs-doctag">@throws</span> DependencyException Error while resolving the entry.
+     * <span class="hljs-doctag">@throws</span> NotFoundException No entry found for the given name.
+     * <span class="hljs-doctag">@return</span> mixed
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get</span><span class="hljs-params">($name)</span>
+    </span>{
+      <span class="hljs-comment">//&#x6839;&#x636E;&#x7C7B;&#x540D;&#x83B7;&#x53D6;&#x5B9E;&#x4F8B;</span>
+        <span class="hljs-comment">// If the entry is already resolved we return it</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>($this-&gt;resolvedEntries[$name]) || array_key_exists($name, $this-&gt;resolvedEntries)) {
+            <span class="hljs-keyword">return</span> $this-&gt;resolvedEntries[$name];
+        }
+
+        $definition = $this-&gt;getDefinition($name);
+        <span class="hljs-keyword">if</span> (! $definition) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NotFoundException(<span class="hljs-string">&quot;No entry or class found for &apos;$name&apos;&quot;</span>);
+        }
+
+        $value = $this-&gt;resolveDefinition($definition);
+
+        $this-&gt;resolvedEntries[$name] = $value;
+
+        <span class="hljs-keyword">return</span> $value;
+    }
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@param</span> string $name
+     *
+     * <span class="hljs-doctag">@return</span> Definition|null
+     */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDefinition</span><span class="hljs-params">($name)</span>
+    </span>{
+       <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x7684;&#x89E3;&#x6790;&#x94FE;&#x89E3;&#x6790;</span>
+        <span class="hljs-comment">// Local cache that avoids fetching the same definition twice</span>
+        <span class="hljs-keyword">if</span> (!array_key_exists($name, $this-&gt;fetchedDefinitions)) {
+            $this-&gt;fetchedDefinitions[$name] = $this-&gt;definitionSource-&gt;getDefinition($name);
+        }
+
+        <span class="hljs-keyword">return</span> $this-&gt;fetchedDefinitions[$name];
+    }
+
+
+    <span class="hljs-comment">/**
+     * Test if the container can provide something for the given name.
+     *
+     * <span class="hljs-doctag">@param</span> string $name Entry name or a class name.
+     *
+     * <span class="hljs-doctag">@throws</span> InvalidArgumentException The name parameter must be of type string.
+     * <span class="hljs-doctag">@return</span> bool
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">has</span><span class="hljs-params">($name)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (! is_string($name)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> InvalidArgumentException(sprintf(
+                <span class="hljs-string">&apos;The name parameter must be of type string, %s given&apos;</span>,
+                is_object($name) ? get_class($name) : gettype($name)
+            ));
+        }
+
+        <span class="hljs-keyword">if</span> (array_key_exists($name, $this-&gt;resolvedEntries)) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        }
+
+        $definition = $this-&gt;getDefinition($name);
+        <span class="hljs-keyword">if</span> ($definition === <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        }
+
+        <span class="hljs-keyword">return</span> $this-&gt;definitionResolver-&gt;isResolvable($definition);
+    }
+
+   .
+   .
+   .
+
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createDefaultDefinitionSource</span><span class="hljs-params">()</span> : <span class="hljs-title">SourceChain</span>
+    </span>{
+        $source = <span class="hljs-keyword">new</span> SourceChain([<span class="hljs-keyword">new</span> ReflectionBasedAutowiring]);
+        $source-&gt;setMutableDefinitionSource(<span class="hljs-keyword">new</span> DefinitionArray([], <span class="hljs-keyword">new</span> ReflectionBasedAutowiring));
+
+        <span class="hljs-keyword">return</span> $source;
+    }
+}
+</code></pre>
+<h2 id="&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;"><a name="&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;" class="plugin-anchor" href="#&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BB9;&#x5668;&#x4E0E;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x5668;</h2>
+<p>&#x5BB9;&#x5668;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x5B9E;&#x4F8B;&#x5316;&#x52A0;&#x8F7D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684;&#x5BF9;&#x8C61;&#x6811; </p>
+<p>&#x53EF;&#x4EE5;&#x9884;&#x5148;&#x5C06;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x5316;&#x4E4B;&#x540E;&#xFF0C;&#x53E5;&#x67C4;&#x6302;&#x8F7D;&#x5230;&#x5BB9;&#x5668;&#x4E0A;&#xFF0C;&#x5728;&#x5E94;&#x7528;&#x5C42;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528; </p>
+<p>&#x5BB9;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6302;&#x8F7D;&#x6811;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x67E5;&#x627E;&#xFF0C;&#x83B7;&#x53D6;&#xFF0C;&#x8BBE;&#x7F6E;&#x7684;&#x8FC7;&#x7A0B;&#x9700;&#x8981;&#x5224;&#x65AD;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x907F;&#x514D;&#x591A;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;</p>
+<p>&#x5BB9;&#x5668;&#x81EA;&#x8EAB;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5B58;&#x50A8;&#x4E8E;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x907F;&#x514D;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x591A;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;&#x9500;&#x6BC1;&#x7684;&#x903B;&#x8F91;</p>
+<p>&#x5BB9;&#x5668;&#x52A0;&#x8F7D;&#x5982;&#x679C;&#x662F;&#x5E38;&#x9A7B;&#x5185;&#x5B58;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x9700;&#x8981;&#x9632;&#x6B62;&#x5BF9;&#x8C61;&#x7684;&#x52A0;&#x8F7D;&#x8FC7;&#x591A;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x4E0D;&#x65AD;&#x6301;&#x7EED;&#x5347;&#x9AD8;</p>
+<p>&#x5BB9;&#x5668;&#x6302;&#x8F7D;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x80FD;&#x4EE3;&#x66FF;&#x7F13;&#x5B58;&#xFF0C;&#x6BD4;&#x5982;&#x53EF;&#x4EE5;&#x628A;Logger &#x6302;&#x8F7D;&#x5230;&#x5BB9;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x5C06;UserId = 100&#x7684;User&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x6302;&#x8F7D;&#x5230;&#x5BB9;&#x5668;&#x3002;&#x5BB9;&#x5668;&#x8DDF;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x5668;&#x6709;&#x5F88;&#x5927;&#x533A;&#x522B;</p>
+<p>&#x5BB9;&#x5668;&#x6302;&#x8F7D;&#x7684;&#x901A;&#x5E38;&#x662F;&#x6846;&#x67B6;&#xFF0C;&#x670D;&#x52A1;&#xFF0C;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x7B49;&#x76F8;&#x5173;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E38;&#x5E38;&#x5728;&#x521D;&#x59CB;&#x8BF7;&#x6C42;&#x7684;&#x9636;&#x6BB5;&#x6216;&#x8005;&#x9884;&#x70ED;&#x9636;&#x6BB5;&#x5C31;&#x5B9E;&#x4F8B;&#x5316;&#x4E86;</p>
+<p>&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x5668;&#x4E3B;&#x8981;&#x662F;&#x5728;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x7528;&#x4E8E;&#x7F13;&#x5B58;&#x5BF9;&#x8C61;&#xFF0C;&#x975E;&#x5E38;&#x9A7B;&#x6A21;&#x5F0F;&#xFF0C;&#x5E38;&#x5E38;&#x6302;&#x8F7D;&#x5230;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x5373;&#x53EF;&#xFF0C;&#x6216;&#x8005;&#x6302;&#x8F7D;&#x5230;&#x5916;&#x90E8;&#x6BD4;&#x5982;APCU,&#x8FDB;&#x7A0B;&#x95F4;&#x5171;&#x4EAB;&#x3002;&#x786E;&#x4FDD;&#x8BFB;&#x53D6;&#x5199;&#x5165;&#x539F;&#x5B50;&#xFF1F; &#x5E38;&#x9A7B;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x6302;&#x8F7D;&#x5230;&#x5916;&#x90E8;&#xFF0C;&#x9632;&#x6B62;&#x4E0D;&#x65AD;&#x589E;&#x957F;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x6EA2;&#x51FA;</p>
+<blockquote>
+<p>&#x7531;&#x975E;&#x5E38;&#x9A7B;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x8F6C;&#x5411;&#x5E38;&#x9A7B;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x4E3B;&#x8981;&#x7684;&#x96BE;&#x70B9;&#x5728;&#x4E8E;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x6BD4;&#x5982;php&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x7C7B;&#x7684;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x7F13;&#x5B58;&#xFF0C;&#x8F6C;&#x5411;swoole&#x5E38;&#x9A7B;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x5C31;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x6D89;&#x53CA;&#x5230;statis &#x53D8;&#x91CF;&#x7684;&#x58F0;&#x660E;&#x548C;&#x4F7F;&#x7528;&#x3002;&#x6682;&#x65F6;&#x6CA1;&#x627E;&#x5230;&#x4F18;&#x96C5;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x6BD4;&#x5982;php&#x5B9A;&#x4E49;&#x6269;&#x5C55;&#x4EE3;&#x66FF;static&#x8BED;&#x6CD5;&#xFF0C;&#x5728;&#x5E95;&#x5C42;&#x89E3;&#x6790;&#x5904;&#x7406;&#xFF0C;&#x6216;&#x8005;&#x5199;&#x5165;&#x7279;&#x6027;&#x76F4;&#x63A5;&#x5F15;&#x5165;&#x5C31;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;static&#x7684;&#x903B;&#x8F91;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7-middleware.html" class="navigation navigation-prev " aria-label="Previous page: Middleware">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="9-example.html" class="navigation navigation-next " aria-label="Next page: Example">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Container","level":"1.10.8","depth":2,"next":{"title":"Example","level":"1.10.9","depth":2,"path":"9-source-code/9-example.md","ref":"9-source-code/9-example.md","articles":[]},"previous":{"title":"Middleware","level":"1.10.7","depth":2,"path":"9-source-code/7-middleware.md","ref":"9-source-code/7-middleware.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","-toggle-chapters","chapter-fold","expandable-chapters","-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","-donate","sharing-plus","anchor-navigation-ex","favicon","copy-code-button"],"ignores":["node_modules","_book"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/nuxseme/slim-portal"},"splitter":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"night","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico","appleTouch":"assets/favicon.ico","appleTouchMore":{"120x120":"assets/favicon.png","180x180":"assets/favicon.png"}},"github-buttons":{"buttons":[{"user":"nuxseme","repo":"slim-portal","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"nuxseme","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"sortedBy":"-","disableTitleFormatting":false,"variables":{},"title":"Slim Portal","language":"zh-hans","catalog":"all","links":{"Github":{"Github":"https://github.com/nuxseme/slim-portal"}},"gitbook":"3.2.3","unchanged":[],"description":"Slim","outputfile":"SUMMARY.md"},"file":{"path":"9-source-code/8-container.md","mtime":"2020-06-02T06:36:24.643Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-02T06:37:26.760Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
